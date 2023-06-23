@@ -1,0 +1,42 @@
+.reg-form {
+    background-color: #38117A;
+    color:white;
+    width: 100vw;
+    height: 170vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.personal-details, .other-info {
+    display: flex;
+    flex-direction: column;
+    width: 63vw;
+    height: 25vh;
+    gap:5px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input_age {
+    width:40px;
+}
+
+.input_address {
+    width:300px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
