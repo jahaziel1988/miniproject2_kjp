@@ -9,7 +9,7 @@
     justify-content: space-between;
     padding: 0.3rem;
     color: white;
-    box-shadow: 0px 1px 6px #050304;
+    /* box-shadow: 0px 1px 6px #050304; */
   }
 
   .navbar h2 {

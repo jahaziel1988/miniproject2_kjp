@@ -7,17 +7,20 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    font-family: 'Lilita One', cursive;
 }
 
 .personal-details, .other-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 63vw;
     height: 25vh;
     gap:5px;
     justify-items: center;
     align-items: center;
     text-align: center;
+    background-color: #B755F2;
 }
 
 .input_age {
