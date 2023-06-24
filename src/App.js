@@ -6,8 +6,8 @@ import Registration from "./Views/Registration/Registration.js";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
-      <Registration/>
+      <Navbar/>
+      {/* <Registration/> */}
     </div>
   );
 }
