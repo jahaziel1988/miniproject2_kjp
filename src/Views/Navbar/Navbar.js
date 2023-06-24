@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar" style={{ backgroundColor: "#B755F2" }}>
       <div className="navbar-logo">
         <a href="/"><img src={logo} alt="2KLC Logo" className='logo' style={{ width: "100px", height: "auto", margin: "10px" }} /></a>
-        <h2>Lebrown City</h2>
+        <a className="lebrown-link" href="/"><h2 className="lebrown-text">Lebrown City</h2></a>
       </div>
       <div className="navbar-links">
         <a href="about" className="navbar-link">About Us</a>
