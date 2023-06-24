@@ -18,6 +18,10 @@
     align-items: center;
     text-align: center;
 }
+.personal-details h3{
+    font-size: 24px;
+    margin-top: 20px;
+}
 .divide-input{
     display: flex;
     justify-items: center;
@@ -43,8 +47,9 @@
     font-size: 15px;
 }
 .reg-title{
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     margin-top: 10px;
+    font-family: 'Lilita One', cursive;
 }
 label{
     margin-right: 16px;
