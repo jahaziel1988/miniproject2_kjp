@@ -1,45 +1,166 @@
 .reg-form {
     background-color: #38117A;
-    color:white;
-    width: 100vw;
-    height: 170vh;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    font-family: 'Lilita One', cursive;
-}
-
-.personal-details, .other-info {
+    color: white;
+    width: 1263px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 63vw;
-    height: 25vh;
-    gap:5px;
+    align-items: center;
+    font-family: 'Lilita One', cursive;
+}
+.personal-details, .other-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+.personal-details h3{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.divide-input{
+    display: flex;
     justify-items: center;
     align-items: center;
     text-align: center;
+    margin-top: 15px;
+}
+.space-top{
+    margin-top: 40px;
+}
+.memberCom{
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+.h6StyleTwo{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.bottom-info{
+    margin-top: 30px;
+    text-align: center;
+}
+.foot-info{
+    font-style: italic;
+    font-size: 15px;
+}
+.reg-title{
+    margin-bottom: 16px;
+    margin-top: 20px;
+    font-family: 'Lilita One', cursive;
+}
+label{
+    margin-right: 16px;
+}
+h6{
+    margin-bottom: 18px;
+}
+textarea{
+    margin-top: 10px;
+}
+.submit-button{
     background-color: #B755F2;
+    border-radius: 28px;
+    border: none;
+    padding: 8px 20px;
 }
-
-.input_age {
-    width:40px;
+.submit-button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #38117A;
 }
-
+.submit-button:hover{
+    opacity: 0.8;
+}
+.input-name{
+    width: 290px;
+}
+.input_dob {
+    width:260px;
+    margin-right: 20px;
+}
 .input_address {
     width:300px;
 }
-
+.input_emailAdd{
+    width: 255px;
+}
 .section2 {
     display: flex;
     flex-direction: row;
     gap:5px;
+    justify-content: center;
+    align-items: center;
 }
-
 .section3 {
     display: flex;
     flex-direction: row;
     gap:5px;
+    justify-content: center;
+    align-items: center;
 }
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #B755F2;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+.message-box p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.message-box button {
+    padding: 10px 20px;
+    background-color: #38117A;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.message-box button:hover{
+    opacity: 0.8;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+.divide-input {
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.input-label {
+    width: 110px; 
+    text-align: center;
+    margin-right: 10px; 
+}
+.form-container{
+    border: 1px solid #B755F2;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 63vw;
+}
+.submit-container{
+    text-align: center;
+}
+.other-info textarea {
+    margin-top: 10px;
+    width: 100%; 
+    resize: vertical; 
+}
+.character-count{
+    color: gray;
+    font-style: italic;
+}
+  
+  
 
