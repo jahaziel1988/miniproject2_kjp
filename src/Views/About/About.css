@@ -1,0 +1,21 @@
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-img { 
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.about-section {
+    background-color: #38117A;
+    padding: 25px;
+}
+
+.about-section p {
+    
+    font-family: monospace;
+    color: white;
+    border-radius: 3px;
+}
