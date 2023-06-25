@@ -1,21 +1,17 @@
 .reg-form {
     background-color: #38117A;
-    color:white;
+    color: white;
     width: 1263px;
-    height: 170vh;
-    display:flex;
+    height: auto;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 .personal-details, .other-info {
     display: flex;
     flex-direction: column;
-    width: 63vw;
-    height: 25vh;
-    gap:5px;
-    justify-items: center;
-    align-items: center;
+    gap: 5px;
     text-align: center;
 }
 .personal-details h3{
@@ -30,10 +26,11 @@
     margin-top: 15px;
 }
 .space-top{
-    margin-top: 140px;
+    margin-top: 40px;
 }
 .memberCom{
     margin-top: 22px;
+    margin-bottom: 20px;
 }
 .h6StyleTwo{
     margin-top: 20px;
@@ -41,14 +38,15 @@
 }
 .bottom-info{
     margin-top: 30px;
+    text-align: center;
 }
 .foot-info{
     font-style: italic;
     font-size: 15px;
 }
 .reg-title{
-    margin-bottom: 34px;
-    margin-top: 10px;
+    margin-bottom: 16px;
+    margin-top: 20px;
     font-family: 'Lilita One', cursive;
 }
 label{
@@ -77,8 +75,9 @@ textarea{
 .input-name{
     width: 290px;
 }
-.input_age {
-    width:60px;
+.input_dob {
+    width:260px;
+    margin-right: 20px;
 }
 .input_address {
     width:300px;
@@ -90,12 +89,15 @@ textarea{
     display: flex;
     flex-direction: row;
     gap:5px;
+    justify-content: center;
+    align-items: center;
 }
-
 .section3 {
     display: flex;
     flex-direction: row;
     gap:5px;
+    justify-content: center;
+    align-items: center;
 }
 .message-box {
     position: fixed;
@@ -123,5 +125,41 @@ textarea{
 .message-box button:hover{
     opacity: 0.8;
 }
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+.divide-input {
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.input-label {
+    width: 110px; 
+    text-align: center;
+    margin-right: 10px; 
+}
+.form-container{
+    border: 1px solid #B755F2;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 63vw;
+}
+.submit-container{
+    text-align: center;
+}
+.other-info textarea {
+    margin-top: 10px;
+    width: 100%; 
+    resize: vertical; 
+}
+.character-count{
+    color: gray;
+    font-style: italic;
+}
+  
   
 
