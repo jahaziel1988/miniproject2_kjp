@@ -17,7 +17,7 @@ const About = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={slide_1_picture} class="d-block w-100 carousel-img img-fluid" alt=""></img>
+                        <img src={slide_1_picture} class="d-block w-100 carousel-img img-fluid carousel-img-1" alt=""></img>
                     </div>
                     <div class="carousel-item">
                         <img src={slide_2_picture} class="d-block w-100 carousel-img img-fluid" alt=""></img>

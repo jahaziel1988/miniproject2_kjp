@@ -1,11 +1,15 @@
 .carousel-item {
-    height: 640px;
+    height: 540px;
 }
 
 .carousel-img { 
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
+}
+
+.carousel-img-1 {
+    object-position: 35% 75%!important;
 }
 
 .about-section {
