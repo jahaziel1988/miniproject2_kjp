@@ -1,0 +1,9 @@
+.footer {
+    background-color: #B755F2;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
