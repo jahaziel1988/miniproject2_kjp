@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import './About.css'
-import slide_1_picture from '../../img/community-picture-2.jpg'
+import slide_1_picture from '../../img/real-life-proam-1.jpg'
 import slide_2_picture from '../../img/community-banner-1.png'
-import slide_3_picture from '../../img/real-life-proam-1.jpg'
+import slide_3_picture from '../../img/community-picture-2.jpg'
 
 const About = () => {
     return (
