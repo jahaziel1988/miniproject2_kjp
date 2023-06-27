@@ -1,5 +1,5 @@
 .carousel-item {
-    height: 540px;
+    height: 480px;
 }
 
 .carousel-img { 
@@ -9,11 +9,15 @@
 }
 
 .carousel-img-1 {
-    object-position: 35% 75%!important;
+    object-position: 35% 75% !important;
 }
 
 .about-section {
     background-color: #38117A;
+}
+
+.about_page {
+    height: 500px;
 }
 
 .about-section p {
@@ -22,4 +26,15 @@
     line-height: 2.5rem;
     font-family: 'Lilita One', cursive;
     font-weight: lighter;
+}
+
+@media screen and (max-width: 900px){
+    .about-section p {
+        font-family: monospace;
+        color: white;
+        line-height: 3rem;
+        font-family: 'Lilita One', cursive;
+        font-weight: bold;
+        height:130vh;
+    }
 }
