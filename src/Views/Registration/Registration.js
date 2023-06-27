@@ -18,13 +18,40 @@ const Registration = () => {
   const handleSubmitButton = (e) => {
     e.preventDefault();
 
-    if (fullName.trim() === '' || dob === '' || email.trim() === '' || address.trim() === '' || !heardAboutUs ||
-    memberOfCommunities.trim() === '' ||
-    idealCommunity.trim() === '' ||
-    contribution.trim() === '') {
-      alert('Please answer all the question. Thank you!');
-      return;
+    const validateEmail = (email) => {
+      const re = /\S+@\S+\.\S+/;
+      return re.test(email);
     }
+
+    const calculateAge = (dobString) => {
+      var today = new Date();
+      var dob = new Date(dobString);
+      var age = today.getFullYear() - dob.getFullYear();
+      var m = today.getMonth() - dob.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+        age--;
+    }
+    return age;
+    }
+    
+    if (calculateAge(dob) < 5) {
+      alert('You must be at least 5 years old to register. Thank you!');
+      return;
+    
+    }
+    
+    if (fullName.trim() === '' || dob === '' || email.trim() === '' || address.trim() === '' || !heardAboutUs ||
+        memberOfCommunities.trim() === '' ||
+        idealCommunity.trim() === '' ||
+        contribution.trim() === '') {
+          alert('Please answer all the question. Thank you!');
+          return;
+        }
+    
+    if (!validateEmail(email)) {
+      alert('Please enter a valid email address. Thank you!');
+      return;
+    }    
 
     setSubmit('Submitted');
     setShowMessage(true);
