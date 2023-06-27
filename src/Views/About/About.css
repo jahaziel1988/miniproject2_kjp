@@ -23,3 +23,7 @@
     font-family: 'Lilita One', cursive;
     font-weight: lighter;
 }
+
+@media screen and (max-width: 960px) {
+    
+}

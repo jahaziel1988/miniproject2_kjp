@@ -1,28 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from "../../img/2KLC_logo.png";
 import './Navbar.css';
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
   return (
     <nav className="navbar" style={{ backgroundColor: "#B755F2" }}>
       <div className="navbar-logo">
-        <a href="/"><img src={logo} alt="2KLC Logo" className='logo' style={{ width: "100px", height: "auto", margin: "10px" }} /></a>
-        <a className="lebrown-link" href="/"><h2 className="lebrown-text">Lebrown City</h2></a>
+        <img src={logo} alt="2KLC Logo" className='logo' style={{ width: "100px", height: "auto", margin: "10px" }} />
+        <h2>Lebrown City</h2>
       </div>
-      <div className="navbar-links">
-        <a href="about" className="navbar-link">About Us</a>
-        <a href="registration" className="navbar-link">Registration Form</a>
-        <a href="gallery" className="navbar-link">Gallery</a>
+      <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? 'bi bi-x' : 'bi bi-list'} />
+      </div>
+      <div className={click ? 'nav-menu active' : 'nav-menu'}>
+        <a href="about" className="navbar-link" onClick={closeMobileMenu}>About Us</a>
+        <a href="registration" className="navbar-link" onClick={closeMobileMenu}>Registration Form</a>
+        <a href="gallery" className="navbar-link" onClick={closeMobileMenu}>Gallery</a>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-
-
-
-
-
-
-

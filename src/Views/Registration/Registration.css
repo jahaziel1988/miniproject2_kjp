@@ -1,13 +1,15 @@
 .reg-form {
     background-color: #38117A;
     color: white;
-    width: 1263px;
+    /* width: 1263px; */
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Lilita One', cursive;
+    padding-top:0;
 }
 .personal-details, .other-info {
     display: flex;
@@ -161,6 +163,10 @@ textarea{
     color: gray;
     font-style: italic;
 }
-  
-  
 
+@media screen and (max-width: 960px) {
+    .form-container{
+        border: 1px solid #B755F2;
+        width: 90vw;
+    }
+}

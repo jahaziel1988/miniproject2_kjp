@@ -38,8 +38,12 @@ const About = () => {
             </div>
             <div className='about-section container-fluid p-3'>
                 <p className='p-5 m-0'>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    This is a lively Filipino community dedicated to playing NBA2K. It consists of players, 
+                    fans, and enthusiasts who share a passion for the popular basketball video game series. 
+                    The community is diverse, comprising individuals from different backgrounds, age groups, 
+                    and gaming skill levels, all united by their love for basketball and gaming. However, 
+                    the NBA2KLC community currently faces a challlenge with a slow registration process 
+                    that hinders its growth and engagement.
                 </p>
             </div>
             <Footer/>
