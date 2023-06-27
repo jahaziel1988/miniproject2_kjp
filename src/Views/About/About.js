@@ -5,6 +5,7 @@ import './About.css'
 import slide_1_picture from '../../img/real-life-proam-1.jpg'
 import slide_2_picture from '../../img/community-banner-1.png'
 import slide_3_picture from '../../img/community-picture-2.jpg'
+import lebrown_city_logo from '../../img/2KLC_logo.png'
 
 const About = () => {
     return (
@@ -41,6 +42,9 @@ const About = () => {
                 <p className='p-5 fs-3'>
                     This is a lively Filipino community dedicated to playing NBA2K. It consists of players, fans, and enthusiasts who share a passion for the popular basketball    video game series. The community is diverse, comprising individuals from different backgrounds, age groups, and gaming skill levels, all united by their love  for basketball and gaming. However, the NBA2KLC community currently faces a challlenge with a slow registration process that hinders its growth and engagement.
                 </p>
+                <div>
+                    <img src={lebrown_city_logo} alt='2KLC Logo'></img>
+                </div>
                 <div className='border mb-3'></div>
             </div>
             <Footer/>
