@@ -8,7 +8,7 @@ import slide_3_picture from '../../img/community-picture-2.jpg'
 
 const About = () => {
     return (
-        <div>
+        <div className="about_page">
             <Navbar />
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">

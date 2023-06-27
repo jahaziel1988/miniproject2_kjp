@@ -16,10 +16,25 @@
     background-color: #38117A;
 }
 
+.about_page {
+    height: 500px;
+}
+
 .about-section p {
     font-family: monospace;
     color: white;
     line-height: 2.5rem;
     font-family: 'Lilita One', cursive;
     font-weight: lighter;
+}
+
+@media screen and (max-width: 900px){
+    .about-section p {
+        font-family: monospace;
+        color: white;
+        line-height: 3rem;
+        font-family: 'Lilita One', cursive;
+        font-weight: bold;
+        height:130vh;
+    }
 }
