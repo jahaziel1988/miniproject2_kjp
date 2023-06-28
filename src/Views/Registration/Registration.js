@@ -144,8 +144,8 @@ const Registration = () => {
           <div className="other-info memberCom">
             <h6>Are you a member of other communities?</h6>
             <div className="section3"><input type="radio" value="yes" name="membership" checked={memberOfCommunities === 'yes'}
-                onChange={handleMembershipChange} />YES</div>
-            <div className="section3"><input type="radio" value="no" name="membership" checked={memberOfCommunities === 'no'}
+            <div className="section3"><input type="radio" value="yes" name="membership" checked={memberOfCommunities === 'no'}
+                onChange={handleMembershipChange} />NO</div>
                 onChange={handleMembershipChange} />NO</div>
           </div>
           <div className="other-info">
