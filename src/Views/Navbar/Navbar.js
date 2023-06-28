@@ -12,15 +12,15 @@ const Navbar = () => {
     <nav className="navbar" style={{ backgroundColor: "#B755F2" }}>
       <div className="navbar-logo">
         <img src={logo} alt="2KLC Logo" className='logo' style={{ width: "100px", height: "auto", margin: "10px" }} />
-        <h2>Lebrown City</h2>
+        <h2 className="h1 m-0">Lebrown City</h2>
       </div>
       <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'bi bi-x' : 'bi bi-list'} />
       </div>
       <div className={click ? 'nav-menu active' : 'nav-menu'}>
-        <a href="about" className="navbar-link" onClick={closeMobileMenu}>About Us</a>
-        <a href="registration" className="navbar-link" onClick={closeMobileMenu}>Registration Form</a>
-        <a href="gallery" className="navbar-link" onClick={closeMobileMenu}>Gallery</a>
+        <a href="about" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a>
+        <a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>Registration Form</a>
+        <a href="gallery" className="navbar-link h5" onClick={closeMobileMenu}>Gallery</a>
       </div>
     </nav>
   );
