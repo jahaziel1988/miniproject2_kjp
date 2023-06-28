@@ -21,8 +21,7 @@
   .navbar-link {
     color: white;
     margin-right: 1rem;
-    text-decoration: none;
-    font-size: 18px;
+    text-decoration: none;  
     font-family: 'Lilita One', cursive;
     font-weight: bold;
   }
@@ -72,7 +71,7 @@
     background: #B755F2;
     left: 0;
     opacity: 1;
-    z-index: 1;
+    z-index: 3;
   }
 
   .navbar-link {
