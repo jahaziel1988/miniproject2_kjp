@@ -3,6 +3,12 @@
   flex-direction: row;
   align-items: center;
 }
+
+.navbar-lebrown-city-link {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar {
     display: flex;
     align-items: center;
