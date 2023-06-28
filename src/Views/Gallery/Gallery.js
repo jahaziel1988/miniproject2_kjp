@@ -55,6 +55,7 @@ return (
 <div>
     <Navbar />
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
+        
         <div className='container-fluid d-flex flex-column'>
             <h1 className='highlight-title display-1 my-5'>Showcase 360</h1>
             <p className="highlight-description text-center fs-4">
