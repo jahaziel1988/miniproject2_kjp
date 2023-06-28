@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import AddHighlightForm from '../AddHighlightPage/AddHighlight';
 import './Gallery.css';
 
-import highlight1 from '../../vids/Rewarded.mp4';
+import highlight1 from '../../vids/pao_highlight.mp4';
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
 import thumbnail2 from '../../img/Thumbnail-img-DRE.png';
