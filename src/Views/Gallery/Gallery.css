@@ -28,15 +28,11 @@
     line-height: 1.5;
 }
 
-.add-button {
-    position: absolute;
-    top: 420px;
-    right: 150px; 
+.add-button { 
     background-color: #b755f2;
     color: #fff;
     border: none;
     border-radius: 30px;
-    padding: 10px 20px; 
     font-size: 16px; 
     font-weight: bold;
     cursor: pointer;
