@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import AddHighlightForm from '../AddHighlightPage/AddHighlight';
 import './Gallery.css';
 
+
 import highlight1 from '../../vids/Rewarded.mp4';
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
@@ -28,6 +29,8 @@ const GalleryPage = () => {
   const videoRef = useRef(null);
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [cards, setCards] = useState([]);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -51,6 +54,8 @@ const GalleryPage = () => {
     setIsFormVisible(false);
   };
 
+
+
 return (
 <div>
     <Navbar />
@@ -65,7 +70,8 @@ return (
         
 
     <div className="highlight-cards">
-        <div className="card">
+        
+        <div className='card'>  
         {playingCard === 1 ? (
             <video
             src={highlight1}
@@ -197,7 +203,7 @@ return (
             <img
             src={thumbnail6}
             alt="Thumbnail 2"
-            onClick={() => handleCardClick(2)}
+            onClick={() => handleCardClick(6)}
             />
         )}
         <div className="bottom-center">
