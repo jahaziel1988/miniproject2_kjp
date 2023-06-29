@@ -102,7 +102,7 @@ const Registration = () => {
     <>
       <Navbar />
       <form className="reg-form">
-        <h1 className="reg-title">Registration</h1>
+        <h1 className="reg-title display-1">Registration</h1>
         {showMessage && (
           <div className="message-box">
             <p>You have successfully submitted the form.</p>

@@ -60,6 +60,10 @@
     height: 120px;
   }
 
+  .navbar-logo h2 {
+    display: none;
+  }
+
   .navbar h2 {
     font-size:40px;
   }

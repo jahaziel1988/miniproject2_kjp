@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <nav className="navbar" style={{ backgroundColor: "#B755F2" }}>
       <div className="navbar-logo">
-        <a href="/" className="navbar-lebrown-city-link"><img src={logo} alt="2KLC Logo" className='m-0' style={{ width: "150px", height: "auto", margin: "10px" }} />
-        <h2 className="display-5 m-0 d-none d-sm-block">Lebrown City</h2></a>
+        <a href="/" className="navbar-lebrown-city-link"><img src={logo} alt="2KLC Logo" style={{ width: "150px", height: "auto" }} />
+        <h2 className="display-5">Lebrown City</h2></a>
       </div>
       <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'bi bi-x' : 'bi bi-list'} />

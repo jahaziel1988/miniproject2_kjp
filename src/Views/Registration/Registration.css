@@ -77,6 +77,7 @@ textarea{
     width: 290px;
 }
 .input_dob {
+    color: gray;
     width:260px;
     margin-right: 20px;
 }
