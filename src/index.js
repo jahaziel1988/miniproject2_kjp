@@ -11,8 +11,8 @@ import Gallery from "./Views/Gallery/Gallery";
 
 const router = createBrowserRouter ([
   { path: '/', element: <Home /> },
-  { path: 'about', element: <About /> },
   { path: 'registration', element: <Registration /> },
+  { path: 'about', element: <About /> },
   { path: 'gallery', element: <Gallery /> },
 ]);
 

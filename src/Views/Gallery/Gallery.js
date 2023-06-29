@@ -5,6 +5,7 @@ import AddHighlightForm from '../AddHighlightPage/AddHighlight';
 import './Gallery.css';
 
 import highlight1 from '../../vids/pao_highlight.mp4';
+import james from '../../vids/james_highlight.mp4';
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
 import thumbnail2 from '../../img/Thumbnail-img-DRE.png';
@@ -28,8 +29,6 @@ const GalleryPage = () => {
   const videoRef = useRef(null);
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [cards, setCards] = useState([]);
-  const [scrollPosition, setScrollPosition] = useState(0);
-
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -54,8 +53,8 @@ const GalleryPage = () => {
   };
 
 
-
 return (
+
 <div>
     <Navbar />
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
@@ -167,7 +166,7 @@ return (
         <div className="card">
         {playingCard === 5 ? (
             <video
-            src={highlight1}
+            src={james}
             ref={videoRef}
             autoPlay
             loop
@@ -455,9 +454,14 @@ return (
 
     </div>
     {isFormVisible && <AddHighlightForm />}
+    {isFormVisible ? (
+        <AddHighlightForm onSubmit={handleFormSubmit} />
+      ) : null}
     </div>
+
     <Footer />
 </div>
+
   );
 };
 

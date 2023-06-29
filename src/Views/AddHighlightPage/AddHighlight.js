@@ -10,10 +10,12 @@ const AddHighlightForm = () => {
 
     const handleVideoInputChange = (event) => {
         const selectedFile = event.target.files[0];
+        setVideoFile(selectedFile);
       };
     
       const handleThumbnailInputChange = (event) => {
         const selectedFile = event.target.files[0];
+        setThumbnailFile(selectedFile);
       };
 
       const handleSubmit = () => {
