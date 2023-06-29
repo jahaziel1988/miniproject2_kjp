@@ -6,7 +6,7 @@
 }
 .navbar-lebrown-city-link {
   text-decoration: none;
-  color: white;
+  color: white
 }
 
 .navbar {
@@ -56,6 +56,10 @@
 @media screen and (max-width: 900px){
   .NavbarItems {
     position: relative;
+  }
+
+  .navbar-lebrown-city-link h2 {
+    display: none;
   }
 
   .navbar h2 {
