@@ -135,12 +135,12 @@ const Registration = () => {
           </div>
           <div className="other-info space-top">
             <h6>How did you hear about us?</h6>
-            <div className="section2"><input type="checkbox" value="engine" defaultChecked 
+            <div className="section2"><input type="checkbox" value="engine" 
                 onChange={handleHeardAboutUsChange} />Search Engine (Google, etc...)</div>
-            <div className="section2"><input type="checkbox" value="social" defaultChecked 
+            <div className="section2"><input type="checkbox" value="social"  
                 onChange={handleHeardAboutUsChange} />Social Media (Facebook, etc...)</div>
-            <div className="section2"><input type="checkbox" value="referral" defaultChecked 
-                onChange={handleHeardAboutUsChange} />Referral: </div>
+            <div className="section2"><input type="checkbox" value="referral"  
+                onChange={handleHeardAboutUsChange} />Others: </div>
           </div>
           <div className="other-info memberCom">
             <h6>Are you a member of other communities?</h6>
