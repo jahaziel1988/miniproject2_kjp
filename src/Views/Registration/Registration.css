@@ -161,6 +161,7 @@ textarea{
 .character-count{
     color: gray;
     font-style: italic;
+    font-size: 22px;
 }
 
 @media screen and (max-width: 800px) {
