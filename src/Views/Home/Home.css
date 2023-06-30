@@ -87,7 +87,7 @@
     display: block;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 100px) {
     .image-card {
       width: 100%;
       max-width: 400px;

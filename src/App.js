@@ -1,11 +1,10 @@
-import Registration from "./Views/Registration/Registration.js";
-
+import Home from "./Views/Home/Home";
 
 
 function App() {
   return (
     <div className="App">
-      <Registration/>
+      <Home />
     </div>
   );
 }
