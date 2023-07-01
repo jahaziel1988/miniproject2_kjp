@@ -8,7 +8,7 @@ import communityCard from '../../img/homeOne.jpg';
 
 function Home() {
   return (
-    <div className="HomePage">
+    <div className="HomePage d-flex flex-column">
       <HeaderHome />     
       <div className="image-container">
         <div className="image-card">
