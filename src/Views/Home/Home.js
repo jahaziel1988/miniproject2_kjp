@@ -19,7 +19,7 @@ function Home() {
                   <div className="image-content">
                     <h2 className="image-title">Join Our Community</h2>
                   </div>
-                  <img src={communityCard} alt="Card 1" className="imageOne" />
+                  <img src={communityCard} alt="Card 1" className="imageOne img-fluid" />
                 </div>
                 <div className="flip-card-back">
                   <div className="image-content">
@@ -41,7 +41,7 @@ function Home() {
                   <div className="image-content">
                     <h2 className="image-title">Show Your Skills</h2>
                   </div>
-                  <img src={highlightsCard} alt="Card 2" className="imageTwo" />
+                  <img src={highlightsCard} alt="Card 2" className="imageTwo img-fluid" />
                 </div>
                 <div className="flip-card-back">
                   <div className="image-content">
@@ -63,7 +63,7 @@ function Home() {
                   <div className="image-content">
                     <h2 className="image-title">Discover Our Story</h2>
                   </div>
-                  <img src={aboutUs} alt="Card 3" className="imageThree" />
+                  <img src={aboutUs} alt="Card 3" className="imageThree img-fluid" />
                 </div>
                 <div className="flip-card-back">
                   <div className="image-content">
