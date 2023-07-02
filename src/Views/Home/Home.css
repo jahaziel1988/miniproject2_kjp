@@ -74,12 +74,12 @@
 }
 .image-title {
     font-size: 32px;
-    font-family: 'Your Font Here', sans-serif;
+    font-family: 'Lilita One', cursive;
     margin-bottom: 10px;
 }
 .image-description {
     font-size: 16px;
-    font-style: italic;
+    font-family: Open Sans;
     margin: 0;
     display: none;
 }

@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Lilita One', cursive;
+    font-family: Open Sans;
     padding-top:0;
 }
 .personal-details, .other-info {
@@ -44,6 +44,7 @@
 .foot-info{
     font-style: italic;
     font-size: 15px;
+    font-family: Open Sans;
 }
 .reg-title{
     margin-bottom: 16px;
