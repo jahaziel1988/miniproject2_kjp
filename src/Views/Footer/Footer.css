@@ -7,3 +7,15 @@
     display: flex;
     justify-content: space-evenly;
 }
+li{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-family: Roboto;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}

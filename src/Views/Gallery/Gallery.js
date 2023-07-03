@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import AddHighlightForm from '../AddHighlightPage/AddHighlight';
 import './Gallery.css';
 
 import highlight1 from '../../vids/pao_highlight.mp4';
@@ -27,8 +26,6 @@ import thumbnail16 from '../../img/Thumbnail-img-YUMMY.png';
 const GalleryPage = () => {
   const [playingCard, setPlayingCard] = useState(null);
   const videoRef = useRef(null);
-  const [isFormVisible, setIsFormVisible] = useState(false);
-  const [cards, setCards] = useState([]);
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -38,20 +35,6 @@ const GalleryPage = () => {
       setPlayingCard(cardId);
     }
   };
-
-  const handleAddHighlightClick = () => {
-    setIsFormVisible(true);
-  };
-
-  const handleFormSubmit = (highlightData) => {
-    const newCard = {
-      id: cards.length + 1,
-      ...highlightData,
-    };
-    setCards((prevCards) => [...prevCards, newCard]);
-    setIsFormVisible(false);
-  };
-
 
 return (
 
@@ -64,9 +47,6 @@ return (
             <p className="highlight-description text-start text-sm-center fs-4">
                 Show off your epic moments, jaw-dropping plays, and unforgettable highlights! This is your chance to shine and share your best gaming moments with the world. Whether it's an insane headshot, a clutch victory, or a mind-blowing combo, we want to see it all. Get ready to level up and make your mark in the highlight reel!
             </p>
-            <div className='my-3 container-fluid text-center text-sm-center text-md-end text-lg-end text-xl-end'>
-                <button className="add-button p-2" onClick={handleAddHighlightClick}> Add Your Highlights</button>
-            </div>
         </div>
 
     <div className="highlight-cards">
@@ -453,10 +433,6 @@ return (
         </div>
 
     </div>
-    {isFormVisible && <AddHighlightForm />}
-    {isFormVisible ? (
-        <AddHighlightForm onSubmit={handleFormSubmit} />
-      ) : null}
     </div>
 
     <Footer />
