@@ -169,6 +169,7 @@ textarea{
     .form-container{
         height: 270vh;
         width: 90vw;
+        border: none;
     }
 
     .bottom-info {
