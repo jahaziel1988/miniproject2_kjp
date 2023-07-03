@@ -24,10 +24,10 @@ const Registration = () => {
     }
 
     const calculateAge = (dobString) => {
-      var today = new Date();
-      var dob = new Date(dobString);
-      var age = today.getFullYear() - dob.getFullYear();
-      var m = today.getMonth() - dob.getMonth();
+      const today = new Date();
+      const dob = new Date(dobString);
+      const age = today.getFullYear() - dob.getFullYear();
+      const m = today.getMonth() - dob.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
         age--;
     }
