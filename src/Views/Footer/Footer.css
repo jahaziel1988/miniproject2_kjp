@@ -7,16 +7,22 @@
     display: flex;
     justify-content: space-evenly;
 }
-li{
+
+li {
     display: flex;
     flex-direction: column;
 }
-p{
+
+p {
     font-family: 'Lilita One', cursive;
     color: white;
-    cursor: pointer;
     margin: 0;
 }
-a{
+
+li :hover + p {
+    color: #38117A;
+}
+
+a {
     text-decoration: none;
 }
