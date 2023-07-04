@@ -12,9 +12,10 @@ li{
     flex-direction: column;
 }
 p{
-    font-family: Roboto;
+    font-family: 'Lilita One', cursive;
     color: white;
     cursor: pointer;
+    margin: 0;
 }
 a{
     text-decoration: none;
