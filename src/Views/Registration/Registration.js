@@ -3,6 +3,7 @@ import './Registration.css';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import axios from 'axios';
+import { useEffect } from 'react';
 
 
 const Registration = () => {
@@ -122,6 +123,10 @@ const Registration = () => {
     const text = e.target.value;
     setContribution(text.substring(0, 300));
   };
+
+  useEffect(() => {
+    document.title = "2KLC | Registration Form"
+  }, []);
 
   return (
     <>

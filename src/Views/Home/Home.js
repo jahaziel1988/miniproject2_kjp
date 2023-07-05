@@ -5,8 +5,12 @@ import HeaderHome from '../HeaderHome/HeaderHome'
 import aboutUs from '../../img/imageThree.jpg';
 import highlightsCard from '../../img/homeTwo.jpg';
 import communityCard from '../../img/homeOne.jpg';
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    document.title = "2KLC | Home"
+  }, []);
   return (
     <div className="HomePage d-flex flex-column">
       <HeaderHome />     

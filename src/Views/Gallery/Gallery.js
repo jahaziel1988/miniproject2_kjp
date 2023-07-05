@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './Gallery.css';
@@ -36,6 +37,10 @@ const GalleryPage = () => {
     }
   };
 
+  useEffect(() => {
+    document.title = "2KLC | Gallery"
+  }, []);
+  
 return (
 
 <div>
