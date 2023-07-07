@@ -4,8 +4,13 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './Gallery.css';
 
-import highlight1 from '../../vids/pao_highlight.mp4';
-import james from '../../vids/james_highlight.mp4';
+import paolo_herrera from '../../vids/paolo_herrera.mp4';
+import james_lorete from '../../vids/james_lorete.mp4';
+import aaron_garcia from '../../vids/aaron_garcia.mp4';
+import daryn_gaces from '../../vids/daryn_gaces.mp4';
+import rogelio_yulo_uy from '../../vids/rogelio_yulo_uy.mp4';
+import miguel_reloj from '../../vids/miguel_reloj.mp4';
+
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
 import thumbnail2 from '../../img/Thumbnail-img-DRE.png';
@@ -59,7 +64,7 @@ return (
         <div className='card'>  
         {playingCard === 1 ? (
             <video
-            src={highlight1}
+            src={aaron_garcia}
             ref={videoRef}
             autoPlay
             loop
@@ -82,7 +87,7 @@ return (
         <div className="card">
         {playingCard === 2 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -105,7 +110,7 @@ return (
         <div className="card">
         {playingCard === 3 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -114,7 +119,7 @@ return (
         ) : (
             <img
             src={thumbnail3}
-            alt="Thumbnail 2"
+            alt="Thumbnail 3"
             onClick={() => handleCardClick(3)}
             />
         )}
@@ -128,7 +133,7 @@ return (
         <div className="card">
         {playingCard === 4 ? (
             <video
-            src={highlight1}
+            src={daryn_gaces}
             ref={videoRef}
             autoPlay
             loop
@@ -137,7 +142,7 @@ return (
         ) : (
             <img
             src={thumbnail4}
-            alt="Thumbnail 2"
+            alt="Thumbnail 4"
             onClick={() => handleCardClick(4)}
             />
         )}
@@ -151,7 +156,7 @@ return (
         <div className="card">
         {playingCard === 5 ? (
             <video
-            src={james}
+            src={james_lorete}
             ref={videoRef}
             autoPlay
             loop
@@ -160,7 +165,7 @@ return (
         ) : (
             <img
             src={thumbnail5}
-            alt="Thumbnail 1"
+            alt="Thumbnail 5"
             onClick={() => handleCardClick(5)}
             />
         )}
@@ -178,7 +183,7 @@ return (
         <div className="card">
         {playingCard === 6 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -187,7 +192,7 @@ return (
         ) : (
             <img
             src={thumbnail6}
-            alt="Thumbnail 2"
+            alt="Thumbnail 6"
             onClick={() => handleCardClick(6)}
             />
         )}
@@ -201,7 +206,7 @@ return (
         <div className="card">
         {playingCard === 7 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -210,7 +215,7 @@ return (
         ) : (
             <img
             src={thumbnail7}
-            alt="Thumbnail 2"
+            alt="Thumbnail 7"
             onClick={() => handleCardClick(7)}
             />
         )}
@@ -224,7 +229,7 @@ return (
         <div className="card">
         {playingCard === 8 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -233,7 +238,7 @@ return (
         ) : (
             <img
             src={thumbnail8}
-            alt="Thumbnail 2"
+            alt="Thumbnail 8"
             onClick={() => handleCardClick(8)}
             />
         )}
@@ -247,7 +252,7 @@ return (
         <div className="card">
         {playingCard === 9 ? (
             <video
-            src={highlight1}
+            src={miguel_reloj}
             ref={videoRef}
             autoPlay
             loop
@@ -256,7 +261,7 @@ return (
         ) : (
             <img
             src={thumbnail9}
-            alt="Thumbnail 1"
+            alt="Thumbnail 9"
             onClick={() => handleCardClick(9)}
             />
         )}
@@ -270,7 +275,7 @@ return (
         <div className="card">
         {playingCard === 10 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -279,7 +284,7 @@ return (
         ) : (
             <img
             src={thumbnail10}
-            alt="Thumbnail 2"
+            alt="Thumbnail 10"
             onClick={() => handleCardClick(10)}
             />
         )}
@@ -297,7 +302,7 @@ return (
         <div className="card">
         {playingCard === 11 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -306,7 +311,7 @@ return (
         ) : (
             <img
             src={thumbnail11}
-            alt="Thumbnail 2"
+            alt="Thumbnail 11"
             onClick={() => handleCardClick(11)}
             />
         )}
@@ -320,7 +325,7 @@ return (
         <div className="card">
         {playingCard === 12 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -329,7 +334,7 @@ return (
         ) : (
             <img
             src={thumbnail12}
-            alt="Thumbnail 2"
+            alt="Thumbnail 12"
             onClick={() => handleCardClick(12)}
             />
         )}
@@ -343,7 +348,7 @@ return (
         <div className="card">
         {playingCard === 13 ? (
             <video
-            src={highlight1}
+            src={rogelio_yulo_uy}
             ref={videoRef}
             autoPlay
             loop
@@ -352,7 +357,7 @@ return (
         ) : (
             <img
             src={thumbnail13}
-            alt="Thumbnail 1"
+            alt="Thumbnail 13"
             onClick={() => handleCardClick(13)}
             />
         )}
@@ -366,7 +371,7 @@ return (
         <div className="card">
         {playingCard === 14 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -375,7 +380,7 @@ return (
         ) : (
             <img
             src={thumbnail14}
-            alt="Thumbnail 2"
+            alt="Thumbnail 14"
             onClick={() => handleCardClick(14)}
             />
         )}
@@ -389,7 +394,7 @@ return (
         <div className="card">
         {playingCard === 15 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -398,7 +403,7 @@ return (
         ) : (
             <img
             src={thumbnail15}
-            alt="Thumbnail 2"
+            alt="Thumbnail 15"
             onClick={() => handleCardClick(15)}
             />
         )}
@@ -417,7 +422,7 @@ return (
         <div className="card">
         {playingCard === 16 ? (
             <video
-            src={highlight1}
+            src={paolo_herrera}
             ref={videoRef}
             autoPlay
             loop
@@ -426,7 +431,7 @@ return (
         ) : (
             <img
             src={thumbnail16}
-            alt="Thumbnail 2"
+            alt="Thumbnail 16"
             onClick={() => handleCardClick(16)}
             />
         )}
