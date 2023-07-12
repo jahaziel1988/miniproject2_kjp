@@ -70,12 +70,12 @@ const HomeTwo = () => {
             </button>
           </div>
           <div className='home-two-column'>
-            <img src={imageOne} alt='Join Now' className='home-two-image' />
+            <img src={imageTwo} alt='Join Now' className='home-two-image' />
           </div>
         </div>
         <div className='home-two-row' style={fadeInRightAnimation}>
           <div className='home-two-column'>
-            <img src={imageTwo} alt='Gallery' className='home-two-image' />
+            <img src={imageOne} alt='Gallery' className='home-two-image' />
           </div>
           <div className='home-two-column'>
             <h3>Explore Our Gallery</h3>
