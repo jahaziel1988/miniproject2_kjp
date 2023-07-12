@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useEffect } from 'react';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer'
 import './Gallery.css';
 
 import paolo_herrera from '../../vids/paolo_herrera.mp4';

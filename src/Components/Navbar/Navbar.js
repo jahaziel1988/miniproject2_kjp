@@ -9,7 +9,7 @@ const Navbar = () => {
     const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav className="navbar" style={{ backgroundColor: "#B755F2" }}>
+    <nav className="navbar" style={{ backgroundColor: "#38117A" }}>
       <div className="navbar-logo">
         <a href="/" className="navbar-lebrown-city-link"><img src={logo} alt="2KLC Logo" style={{ width: "150px", height: "auto" }} />
         <h2 className="display-5">Lebrown City</h2></a>
@@ -18,9 +18,10 @@ const Navbar = () => {
             <i className={click ? 'bi bi-x' : 'bi bi-list'} />
       </div>
       <div className={click ? 'nav-menu active' : 'nav-menu'}>
-        <a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>Registration Form</a>
-        <a href="about" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a>
+        <a href="login" className="navbar-link h5" onClick={closeMobileMenu}>Log in</a>
+        <a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>Register</a>
         <a href="gallery" className="navbar-link h5" onClick={closeMobileMenu}>Gallery</a>
+        <a href="about" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a>
       </div>
     </nav>
   );

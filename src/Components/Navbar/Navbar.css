@@ -15,7 +15,6 @@
     justify-content: space-between;
     padding: 0.3rem;
     color: white;
-    box-shadow: 0px 1px 5px #050304
   }
 
   .navbar h2 {
@@ -34,7 +33,7 @@
   }
   
   .navbar-link:hover {
-    border-bottom: 3px solid #38117A;
+    border-bottom: 3px solid #B755F2;
     color: white;
     border-radius: 3px;
   }

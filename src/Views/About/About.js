@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 import './About.css'
 import slide_1_picture from '../../img/real-life-proam-1.jpg'
 import slide_2_picture from '../../img/community-banner-1.png'

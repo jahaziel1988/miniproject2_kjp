@@ -1,147 +1,122 @@
-.HomePage {
-  background-color: #38117A;
-  padding: 20px;
-  text-align: center;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 80px;
-}
-
-.image-card {
-  position: relative;
-  text-align: center;
-}
-
-.flip-card {
-  width: 400px;
-  height: 400px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.flip-card-back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(180deg);
-  background-color: rgba(0, 0, 0, 0.3);
-  flex-direction: column;
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 1;
-}
-
-.flip-card:hover .flip-card-back {
-  opacity: 1;
-}
-
-.imageOne,
-.imageTwo,
-.imageThree {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-content {
-  text-align: center;
-  color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.image-title {
-  font-size: 32px;
-  font-family: 'Lilita One', cursive;
-  margin-bottom: 10px;
-}
-
-.image-description {
-  font-size: 16px;
-  font-family: Open Sans;
-  margin: 0;
-  display: none;
-}
-
-.flip-card:hover .image-description {
-  display: block;
-}
-
-@media (max-width: 400px) {
-  .image-card {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
+.highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #38117a;
+    gap: 28px;
   }
-
-  .flip-card {
-    width: 100%;
+  
+.highlight-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #38117a;
+    padding: 20px;
+} 
+.highlight-title {
+    text-align: center;
+    color: #fff;
+    font-family: 'Lilita One', cursive;
+}
+.search-bar {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    margin-right: 10px;
+    width: 400px;
     height: auto;
-    perspective: none;
+    padding: 16px 20px;
+    border-radius: 20px;
+    background-color: #b755f2;
   }
-
-  .flip-card-inner {
-    transform: none;
+  
+  .add-highlights-button {
+    position: absolute;
+    top: 350px;
+    right: 150px;
+    padding: 10px;
   }
-
-  .flip-card-front {
+  
+  .add-highlights-button button {
+    background-color: #b755f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 16px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .add-highlights-button button:hover {
+    opacity: 0.9;
+}
+  
+.add-button { 
+    background-color: #b755f2;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-button:hover{
+    background-color: #fff;
+    color: #38117a;
+}
+.card {
+    margin: 0;
+    padding: 0;
     position: relative;
+    width: 300px;
+    height: 450px;
+    border: 1px solid #38117a;
+    background-color: #b755f2;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
   }
-
-  .imageOne,
-  .imageTwo,
-  .imageThree {
-    width: 100%;
-    height: auto;
+.card img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-  }
-  .image-description{
-    display: none;
-  }
-  .image-title{
-    font-size: 20px;
-  }
+    transition: transform 0.3s ease;
 }
-
-
-
-
-
-
-
+.card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom-center {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.bottom-center button {
+    width: 300px;
+    background-color: #b755f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bottom-center button:hover{
+    background-color: #FFF;
+    color: #38117a;
+}
 
