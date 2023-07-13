@@ -11,7 +11,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="body-container">
       <div className="home">
         <Navbar/>
         <div className="video-container"> 
