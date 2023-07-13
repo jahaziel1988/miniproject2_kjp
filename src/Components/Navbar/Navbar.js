@@ -9,7 +9,7 @@ const Navbar = () => {
     const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav className="navbar" style={{ backgroundColor: "#38117A" }}>
+    <nav className="navbar">
       <div className="navbar-logo">
         <a href="/" className="navbar-lebrown-city-link"><img src={logo} alt="2KLC Logo" style={{ width: "150px", height: "auto" }} />
         <h2 className="display-5">Lebrown City</h2></a>

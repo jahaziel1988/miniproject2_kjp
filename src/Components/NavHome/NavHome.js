@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav className="navbar" style={{ backgroundColor: '#38117A' }}>
+    <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
           <a href="" className="navbar-lebrown-city-link">
