@@ -9,12 +9,13 @@
   color: white;
 }
 
-.navbar {
+.main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.3rem;
     color: white;
+    background-color: #B755F2;
   }
 
   .navbar h2 {

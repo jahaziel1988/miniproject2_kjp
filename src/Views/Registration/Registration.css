@@ -1,7 +1,6 @@
 .body {
     background-color: #38117A;
     height: 100vh;
-    opacity: 0;
     animation: fade-in 0.5s ease forwards;
   }
   
@@ -47,8 +46,8 @@
   select {
     width: 100%;
     padding: 10px;
-    background-color: #38117A; /* Change the background color */
-    color: white; /* Change the text color */
+    background-color: #38117A; 
+    color: white;
     border: none;
   }
   select::placeholder{
@@ -212,6 +211,74 @@
   .ok-button:hover {
     opacity: 0.8;
   }
+  @media (max-width: 800px) {
+    .form-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .text-header {
+      text-align: center;
+    }
+  
+    .mb-3 {
+      margin-bottom: 15px;
+    }
+  
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  
+    .success-message {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .navbar-logo {
+      transform: translate(5%, 5%);
+      height: 120px;
+    }
+  
+    .navbar-logo h2 {
+      display: none;
+    }
+  
+    .navbar h2 {
+      font-size:40px;
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 120px;
+      left: -100%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 290vh;
+    }
+  
+    .nav-menu.active {
+      background: #B755F2;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .navbar-link {
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .menu-icon {
+      display: block;
+      transform: translate(-15%, 10%);
+    }
+  }
+  
+
   
   
   

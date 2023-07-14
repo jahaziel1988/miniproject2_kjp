@@ -1,3 +1,6 @@
+body{
+  background-color: #38117a;
+}
 .highlight-cards {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +38,7 @@
     height: auto;
     padding: 16px 20px;
     border-radius: 20px;
-    background-color: #b755f2;
+    background-color: #38117a;
   }
   
   .add-highlights-button {
@@ -46,7 +49,7 @@
   }
   
   .add-highlights-button button {
-    background-color: #b755f2;
+    background-color: #38117a;
     color: #fff;
     border: none;
     border-radius: 20px;

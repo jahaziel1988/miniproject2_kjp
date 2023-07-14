@@ -11,30 +11,32 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-logo">
-          <a href="" className="navbar-lebrown-city-link">
-            <img src={logo} alt="2KLC Logo" className="navbar-logo-img" />
-          </a>
-          <h2 className="display-5">Showcase 360</h2>
-        </div>
-        <div className={`menu-icon ${click ? 'active' : ''}`} onClick={handleClick}>
-          <FontAwesomeIcon icon={faBars} />
-        </div>
-        <div className={`nav-menu ${click ? 'active' : ''}`}>
-          <div className="dropdown">
-            <button className="dropdown-button">
-              Profile <FontAwesomeIcon icon={faBars} />
-            </button>
-            <div className="dropdown-content">
-              <a href="profile">Edit Profile</a>
-              <a href="/">Log Out</a>
+    <div className='nav-color'>
+      <nav className="navbar" style={{ backgroundColor: '#38117A' }}>
+        <div className="navbar-container">
+          <div className="navbar-logo">
+            <a href="" className="navbar-lebrown-city-link">
+              <img src={logo} alt="2KLC Logo" className="navbar-logo-img" />
+            </a>
+            <h2 className="display-5">Showcase 360</h2>
+          </div>
+          <div className={`menu-icon ${click ? 'active' : ''}`} onClick={handleClick}>
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+          <div className={`nav-menu ${click ? 'active' : ''}`}>
+            <div className="dropdown">
+              <button className="dropdown-button">
+                Profile <FontAwesomeIcon icon={faBars} />
+              </button>
+              <div className="dropdown-content">
+                <a href="profile">Edit Profile</a>
+                <a href="/">Log Out</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

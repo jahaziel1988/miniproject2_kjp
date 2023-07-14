@@ -3,6 +3,7 @@ import './Registration.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RegistrationForm = () => {
   const [step, setStep] = useState(1);
@@ -288,11 +289,11 @@ const RegistrationForm = () => {
                   selected={selectedDate}
                   onChange={handleDateChange}
                   dateFormat="MM/dd/yyyy"
-                  placeholderText="Select a date"
+                  placeholderText="Select your birth date"
                   showYearDropdown
                   scrollableYearDropdown
                   yearDropdownItemNumber={50}
-                  maxDate={new Date()}
+                  maxDate={new Date(2013, 0, 1)}
                   className={selectedDateError ? 'input-field error' : 'input-field'}
                 />
               </div>

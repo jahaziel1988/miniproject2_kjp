@@ -1,8 +1,7 @@
-.navbar {
-  background-color: #B755F2;
-  padding: 0.5rem;
+.navbar{
+  background-color: #B755F2 !important;
+  padding: 20px;
 }
-
 .navbar-container {
   display: flex;
   align-items: center;
