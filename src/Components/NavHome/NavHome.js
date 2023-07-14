@@ -21,12 +21,12 @@ const Navbar = () => {
             <h2 className="display-5">Showcase 360</h2>
           </div>
           <div className={`menu-icon ${click ? 'active' : ''}`} onClick={handleClick}>
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faChevronDown} />
           </div>
           <div className={`nav-menu ${click ? 'active' : ''}`}>
             <div className="dropdown">
               <button className="dropdown-button">
-                Profile <FontAwesomeIcon icon={faBars} />
+                Profile <FontAwesomeIcon icon={faChevronDown} />
               </button>
               <div className="dropdown-content">
                 <a href="profile">Edit Profile</a>
