@@ -5,7 +5,6 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Trailer from '../../vids/2KLCSEASONXINTROCAPTAINS.mp4';
 import LP2 from './../LP2/LP2';
 import Footer from '../../Components/Footer/Footer'
-import NavHome from '../../Components/NavHome/NavHome'
 
 function Home() {
   useEffect(() => {
