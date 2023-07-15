@@ -3,8 +3,9 @@ import logo from '../../img/2KLC_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './NavHome.css';
+import Navbar from "../../Components/Navbar/Navbar";
 
-const Navbar = () => {
+const NavHome = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -15,7 +16,7 @@ const Navbar = () => {
       <nav className="navbar" style={{ backgroundColor: '#38117A' }}>
         <div className="navbar-container">
           <div className="navbar-logo">
-            <a href="" className="navbar-lebrown-city-link">
+            <a href="/">
               <img src={logo} alt="2KLC Logo" className="navbar-logo-img" />
             </a>
             <h2 className="display-5">Showcase 360</h2>
@@ -36,8 +37,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Navbar/>
     </div>
   );
 };
 
-export default Navbar;
+export default NavHome;
