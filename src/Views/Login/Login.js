@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import './Login.css';
+import Footer from '../../Components/Footer/Footer';
 
 const Login = () => {
   const [showPage, setShowPage] = useState(false);
@@ -66,7 +67,8 @@ const Login = () => {
           Log in
         </button>
       </div>
-    </div>
+      <Footer/>
+    </div> 
   );
 };
 
