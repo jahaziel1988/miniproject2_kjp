@@ -3,7 +3,6 @@ import logo from '../../img/2KLC_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './NavHome.css';
-import Navbar from "../../Components/Navbar/Navbar";
 
 const NavHome = () => {
   const [click, setClick] = useState(false);
@@ -37,7 +36,6 @@ const NavHome = () => {
           </div>
         </div>
       </nav>
-      <Navbar/>
     </div>
   );
 };

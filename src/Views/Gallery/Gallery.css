@@ -17,11 +17,11 @@
 .highlight-title {
     text-align: center;
     color: #fff;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Anton', sans-serif !important;
 }
 .highlight-description {
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Antonio', sans-serif;
     margin-bottom: 50px;
 }
 .highlight-description p{
