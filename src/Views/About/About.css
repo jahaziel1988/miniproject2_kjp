@@ -16,6 +16,13 @@
     background-color: #38117A;
 }
 
+.about-section h2 {
+    color: white;
+    display: none;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+
 .about_page {
     height: 500px;
 }
@@ -23,15 +30,23 @@
 .about-section p {
     color: white;
     line-height: 2.5rem;
-    font-family: Open Sans;
+    font-family: 'Antonio', sans-serif;
     font-weight: lighter;
 }
 
 @media screen and (max-width: 800px){
     .about-section p {
         line-height: 3rem;
-        font-weight: bold;
-        height:140vh;
+        text-align: start;
+    }
+
+    .about-section h2 {
+        color: white;
+        display: block;
+    }
+
+    .carousel {
+        display: none;
     }
 
     .carousel-item {
