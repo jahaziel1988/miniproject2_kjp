@@ -4,6 +4,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../../Components/Footer/Footer';
 
 const RegistrationForm = () => {
   const [step, setStep] = useState(1);
@@ -395,7 +396,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="body">
+    <d  iv>
       <Navbar />
       <div className="container">
         {renderForm()}
@@ -410,7 +411,8 @@ const RegistrationForm = () => {
           </div>
         )}
       </div>
-    </div>
+      <Footer/>
+    </d>
   );
 };
 
