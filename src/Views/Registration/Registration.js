@@ -5,6 +5,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../../Components/Footer/Footer';
+import axios from 'axios';
 
 const RegistrationForm = () => {
   const [step, setStep] = useState(1);
@@ -52,6 +53,7 @@ const RegistrationForm = () => {
       setStep(step + 1);
     }
   };
+
 
   const validateFields = () => {
     let isValid = true;
@@ -183,9 +185,25 @@ const RegistrationForm = () => {
     e.preventDefault();
 
     if (validateStep3()) {
-      
-
-      setShowSuccessMessage(true);
+        axios.post('http://localhost:4000/register', {
+        username,
+        password,
+        email: emailAdd,
+        fullName,
+        address,
+        selectedDate,
+        hearAboutUs,
+        memberOfCommunities,
+        communityActivities,
+        dreamCommunity
+      })
+        .then(response => {
+          console.log(response.data);
+          setShowSuccessMessage(true);
+        })
+        .catch(error => {
+          console.error(error);
+        });
     }
   };
 
@@ -396,7 +414,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <d  iv>
+    <div>
       <Navbar />
       <div className="container">
         {renderForm()}
@@ -412,7 +430,7 @@ const RegistrationForm = () => {
         )}
       </div>
       <Footer/>
-    </d>
+    </div>
   );
 };
 

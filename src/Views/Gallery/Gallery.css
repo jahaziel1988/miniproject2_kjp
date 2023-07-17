@@ -1,10 +1,11 @@
-.highlight-cards {
+.highlight-card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #38117a;
     gap: 28px;
+    margin-top: 30px;
 }
 .highlight-page {
     display: flex;
@@ -19,17 +20,22 @@
     color: #fff;
     font-family: 'Anton', sans-serif !important;
 }
+.text-gallery{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .highlight-description {
     color: #FFF;
     font-family: 'Antonio', sans-serif;
-    margin-bottom: 50px;
+    width: 800px;
 }
 .highlight-description p{
     margin: 0;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
 .add-button { 
     background-color: #b755f2;
     color: #fff;

@@ -175,6 +175,7 @@
     color:rgb(143, 20, 20);
     font-size: 16px;
     display: inline-block;
+    margin: 0;
   }
   .success-message {
     position: fixed;

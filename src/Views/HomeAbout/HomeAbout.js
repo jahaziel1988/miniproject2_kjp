@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Navbar from '../../Components/Navbar/Navbar';
+import NavHome from '../../Components/NavHome/NavHome'
 import Footer from '../../Components/Footer/Footer';
-import './About.css'
+import './../About/About.css'
 import slide_1_picture from '../../img/real-life-proam-1.jpg'
 import slide_2_picture from '../../img/community-banner-1.png'
 import slide_3_picture from '../../img/community-picture-2.jpg'
@@ -13,7 +13,7 @@ const About = () => {
       }, []);
     return (
         <div className="about_page">
-            <Navbar />
+            <NavHome />
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

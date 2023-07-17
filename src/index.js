@@ -10,7 +10,9 @@ import Gallery from "./Views/Gallery/Gallery";
 import LandingPage from "./Views/LandingPage/LandingPage";
 import Home from './Views/Home/Home';
 import Login from './Views/Login/Login';
-import Profile from "./Views/Profile/Profile";
+import HomeAbout from './Views/HomeAbout/HomeAbout';
+import AdminBoard from "./Views/AdminBoard/AdminBoard";
+
 
 const router = createBrowserRouter ([
   { path: '/', element: <LandingPage /> },
@@ -18,8 +20,9 @@ const router = createBrowserRouter ([
   { path: 'about', element: <About /> },
   { path: 'gallery', element: <Gallery /> },
   { path: 'home', element: <Home /> },
-  { path: 'profile', element: <Profile /> },
   { path: 'login', element: <Login /> },
+  { path: 'homeabout', element: <HomeAbout /> },
+  { path: 'adminboard', element: <AdminBoard/> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

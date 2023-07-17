@@ -52,14 +52,17 @@ return (
     <Navbar />
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
         
-        <div className='container-fluid d-flex flex-column'>
+        <div className='text-gallery container-fluid d-flex flex-column'>
             <h1 className='highlight-title display-1 my-5'>Showcase 360</h1>
             <p className="highlight-description text-start text-sm-center fs-4">
-                Show off your epic moments, jaw-dropping plays, and unforgettable highlights! This is your chance to shine and share your best gaming moments with the world. Whether it's an insane headshot, a clutch victory, or a mind-blowing combo, we want to see it all. Get ready to level up and make your mark in the highlight reel!
+            Welcome to Showcase 360 - where gaming greatness shines! Dive into our Gallery, a captivating collection of epic moments and jaw-dropping highlights from our talented members. Immerse yourself in the world of gaming brilliance and get inspired by the incredible skills on display.
+            </p>
+            <p className="highlight-description text-start text-sm-center fs-4">
+            Are you ready to make your mark in the gaming community? Join us and become a member to unleash your full potential. As a member, you'll have the power to add your own mind-blowing highlights to our ever-growing collection. Don't miss this chance to be in the spotlight and share your gaming journey with fellow enthusiasts.
             </p>
         </div>
 
-    <div className="highlight-cards">
+    <div className="highlight-card">
         
         <div className='card'>  
         {playingCard === 1 ? (
@@ -178,7 +181,7 @@ return (
 
     </div>
 
-    <div className="highlight-cards">
+    <div className="highlight-card">
 
         <div className="card">
         {playingCard === 6 ? (
@@ -297,7 +300,7 @@ return (
 
     </div>
 
-    <div className="highlight-cards">
+    <div className="highlight-card">
 
         <div className="card">
         {playingCard === 11 ? (
@@ -416,7 +419,7 @@ return (
 
     </div>
 
-    <div className="highlight-cards">
+    <div className="highlight-card">
         
 
         <div className="card">

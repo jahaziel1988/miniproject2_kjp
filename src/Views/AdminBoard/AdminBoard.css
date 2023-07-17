@@ -1,0 +1,81 @@
+body {
+    background-color: #38117a;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-board {
+    padding: 20px;
+    margin-top: 130px;
+    border-top: #b755f2 1px solid;
+  }
+  
+  .search-bar {
+    position: fixed;
+    top: 170px;
+    left: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 500px;
+    background-color: #b755f2;
+  }
+  
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-row {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .user-row h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #38117a;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .user-row p {
+    margin: 0;
+    color: #38117a;
+    margin-bottom: 5px;
+  }
+  
+  .status-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .status-buttons span {
+    flex-grow: 1;
+    font-weight: bold;
+    color: #38117a;
+  }
+  
+  .approve-button,
+  .disapprove-button {
+    background-color: #38117a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .approve-button:hover,
+  .disapprove-button:hover {
+    opacity: 0.8;
+  }
+  
