@@ -14,13 +14,14 @@ body {
   transform: translateY(20px);
   animation: fade-in 0.5s ease-in-out forwards;
   font-family: 'Antonio', sans-serif;
+  margin-bottom: 230px;
 }
 
 @media screen and (max-width: 800px) {
   .login-container {
-    width: 90%; /* Adjust the width to fit smaller screens */
-    margin: 50px auto; /* Adjust the margin for center alignment */
-    margin-bottom: 100px; /* Decrease the margin-bottom to avoid excessive spacing */
+    width: 90%; 
+    margin: 50px auto; 
+    margin-bottom: 100px; 
   }
 }
 
