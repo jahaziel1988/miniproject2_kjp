@@ -95,14 +95,15 @@ return (
 <div>
     <NavHome />
     <div className="highlight-Homepage" style={{ backgroundColor: '#38117A' }}>
+        <div className='container-fluid d-flex align-items-center justify-content-between'>
+            <div className="search-card">
+                <input type="text" placeholder="Search Username" />
+            </div>
+            <div className="add-highlights-button">
+                <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
+            </div>
+        </div>
         
-        <div className="search-card">
-            <input type="text" placeholder="Search Username" />
-        </div>
-        <div className="add-highlights-button">
-            <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
-        </div>
-
         {showModal && (
         <div className="modal">
             <div className="modal-content">
