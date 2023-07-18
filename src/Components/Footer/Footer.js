@@ -9,15 +9,15 @@ const Footer = () => {
                 <ul className='m-0 p-0'>
                     <li>
                         <a href='https://discord.gg/2RyvhZa4'><img src={discord} alt="discord logo"></img>
-                        <p className='m-0'>Discord</p></a>
+                        <p className='m-0 footer-text'>Discord</p></a>
                     </li>
                     <li>
                         <a href='https://www.youtube.com/@nba2klebrowncity2klc61'><img src={youtube} alt="youtube logo"></img>
-                        <p className='m-0'>Youtube</p></a>
+                        <p className='m-0 footer-text'>Youtube</p></a>
                     </li>
                     <li>
                         <a href='https://www.facebook.com/NBA2KLebrownCity2KLC'><img src={facebook} alt="facebbok logo"></img>
-                        <p className='m-0'>Facebook</p></a>
+                        <p className='m-0 footer-text'>Facebook</p></a>
                     </li>
                 </ul>
             </footer>

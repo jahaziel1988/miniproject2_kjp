@@ -13,12 +13,12 @@ li {
     flex-direction: column;
 }
 
-p {
+.footer-text {
     font-family: 'Anton', sans-serif;
     color: white;
 }
 
-li :hover + p {
+li :hover + .footer-text {
     color: #38117A;
 }
 
