@@ -1,0 +1,75 @@
+.forgot-password-container {
+    background-color: #B755F2;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+    margin-bottom: 420px;
+    margin-top: 200px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .forgot-password-container {
+      width: 90%;
+      margin: 50px auto;
+    }
+  }
+  
+  .forgot-password-title {
+    font-family: 'Anton', sans-serif;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 19px;
+    margin-bottom: 6px;
+    color: white;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  .error-message {
+    color: rgb(143, 20, 20);
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  
+  .email-sent-message {
+    color:#38117a;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .reset-password-button {
+    background-color: #38117a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .reset-password-button:hover {
+    background-color: #4d1fa9;
+  }
+  

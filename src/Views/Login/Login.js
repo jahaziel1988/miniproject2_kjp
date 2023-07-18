@@ -61,7 +61,7 @@ const Login = () => {
           {passwordError && <p className="error-message">Please type your password</p>}
         </div>
         <div className="forgot-password">
-          <a href="https://www.google.com/search?sxsrf=AB5stBhPJXBQe8xQCMl9Z9n00VVAmbNEBA:1689080267154&q=forgot+your+password+joke&tbm=isch&sa=X&ved=2ahUKEwjdh8iq2oaAAxUt4jgGHWfmBRQQ0pQJegQIDBAB&biw=1920&bih=1007&dpr=1#imgrc=mjD4z5lU8h8ItM">Forgot your password?</a>
+          <a href="forgotpass">Forgot your password?</a>
         </div>
         <button className="login-button mb-4" onClick={handleLogin} >
           Log in
