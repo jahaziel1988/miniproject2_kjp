@@ -1,18 +1,15 @@
 body {
     background-color: #38117a;
-    font-family: Arial, sans-serif;
+    font-family: 'Antonio', sans-serif;
   }
   
   .admin-board {
     padding: 20px;
-    margin-top: 130px;
     border-top: #b755f2 1px solid;
   }
   
   .search-bar {
-    position: fixed;
-    top: 170px;
-    left: 700px;
+    margin-top: 100px;
     margin-bottom: 20px;
   }
   
@@ -79,3 +76,8 @@ body {
     opacity: 0.8;
   }
   
+  @media screen and (max-width: 800px){
+    .search-bar input {
+      width: auto;
+    }
+}
