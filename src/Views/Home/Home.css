@@ -18,8 +18,12 @@ body {
   justify-content: center;
   background-color: #38117a;
   padding: 20px;
-  margin-top: 250px; /* Line changed: Adjusted margin-top for responsiveness */
   font-family: 'Antonio', sans-serif;
+}
+
+.wrapper {
+  height: 100px !important;
+  margin-top: 250px;
 }
 
 .highlight-title {

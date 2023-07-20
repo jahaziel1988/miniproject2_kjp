@@ -72,7 +72,6 @@ const AdminBoard = () => {
           />
         </div>
       <div className="admin-board">
-        
         <div className="user-list">
           {filteredUsers.map((user) => (
             <div className="user-row" key={user.id}>
