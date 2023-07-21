@@ -17,6 +17,7 @@ body {
 
 .card-nav {
   margin-top: 150px;
+  margin-bottom: 10px;
 }
 
 .highlight-title {
@@ -31,13 +32,12 @@ body {
 .search-card input {
   margin: 0;
   width: 400px;
-  padding: 16px 20px;
   border-radius: 20px;
   background-color: #b755f2;
 }
 
 .add-highlights-button {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .add-highlights-button button {
@@ -187,6 +187,10 @@ p {
   }
 
   .card {
+    width: 100%;
+  }
+
+  .bottom-center button {
     width: 100%;
   }
 }

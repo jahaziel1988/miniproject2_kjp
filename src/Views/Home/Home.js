@@ -96,12 +96,12 @@ return (
     <NavHome />
     
     <div className="highlight-Homepage">
-        <div className="card-nav d-flex justify-content-between">
+        <div className="card-nav d-flex justify-content-between align-items-center">
                 <div className="search-card">
-                    <input type="text" placeholder="Search Username" />
+                    <input className='p-3' type="text" placeholder="Search Username" />
                 </div>
-                <div className="add-highlights-button m-0">
-                    <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
+                <div className="add-highlights-button">
+                    <button className='p-3' onClick={handleAddHighlightsClick}>Add Your Highlights</button>
                 </div>
         </div>
         {showModal && (
