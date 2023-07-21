@@ -71,7 +71,7 @@ const AdminBoard = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
-      <div className="admin-board">
+      <div className="admin-board container-fluid">
         <div className="user-list">
           {filteredUsers.map((user) => (
             <div className="user-row" key={user.id}>

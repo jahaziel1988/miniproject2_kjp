@@ -94,15 +94,16 @@ return (
 
 <div>
     <NavHome />
-    <div className="wrapper container d-flex align-items-center justify-content-between">
-            <div className="search-card">
-                <input type="text" placeholder="Search Username" />
-            </div>
-            <div className="add-highlights-button">
-                <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
-            </div>
-    </div>
-    <div className="highlight-Homepage" style={{ backgroundColor: '#38117A' }}>
+    
+    <div className="highlight-Homepage">
+        <div className="card-nav d-flex justify-content-between">
+                <div className="search-card">
+                    <input type="text" placeholder="Search Username" />
+                </div>
+                <div className="add-highlights-button m-0">
+                    <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
+                </div>
+        </div>
         {showModal && (
         <div className="modal">
             <div className="modal-content">
@@ -246,10 +247,6 @@ return (
         </div>
         </div>
 
-    </div>
-
-    <div className="highlight-cards">
-
         <div className="card">
         {playingCard === 6 ? (
             <video
@@ -364,10 +361,6 @@ return (
             </button>
         </div>
         </div>
-
-    </div>
-
-    <div className="highlight-cards">
 
         <div className="card">
         {playingCard === 11 ? (
@@ -484,11 +477,6 @@ return (
         </div>
         </div>
 
-        
-
-    </div>
-
-    <div className="highlight-cards">
           {highlightData.map((highlight) => (
             <div className="card" key={highlight.id}>
               {playingCard === highlight.id ? (

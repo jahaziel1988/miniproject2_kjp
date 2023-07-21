@@ -3,6 +3,7 @@ body {
     font-family: 'Antonio', sans-serif;
   }
   
+  
   .admin-board {
     padding: 20px;
     border-top: #b755f2 1px solid;
@@ -22,8 +23,9 @@ body {
   }
   
   .user-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
   
@@ -31,7 +33,8 @@ body {
     border: 1px solid #ccc;
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 5px;;
+    width: 600px;
   }
   
   .user-row h3 {
@@ -40,12 +43,14 @@ body {
     color: #38117a;
     font-weight: bold;
     margin-bottom: 10px;
+    word-wrap: break-word;
   }
   
   .user-row p {
     margin: 0;
     color: #38117a;
     margin-bottom: 5px;
+    word-wrap: break-word;
   }
   
   .status-buttons {
@@ -78,6 +83,41 @@ body {
   
   @media screen and (max-width: 800px){
     .search-bar input {
-      width: auto;
+      width: 80%;
+    }
+
+    .card-list {
+      width: 90%;
+      flex-direction: column;
+    }
+
+    .user-row {
+      width: 90%;
+    }
+
+    .status-buttons {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      gap: 5px;
+    }
+    
+    .status-buttons span {
+      flex-grow: 1;
+      font-weight: bold;
+      color: #38117a;
+    }
+    
+    .approve-button,
+    .disapprove-button {
+      background-color: #38117a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      margin: 0;
     }
 }
