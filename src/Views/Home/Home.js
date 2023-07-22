@@ -96,7 +96,7 @@ return (
     <NavHome />
     
     <div className="highlight-Homepage">
-        <div className="card-nav d-flex justify-content-between align-items-center">
+        <div className="card-nav">
                 <div className="search-card">
                     <input className='p-3' type="text" placeholder="Search Username" />
                 </div>

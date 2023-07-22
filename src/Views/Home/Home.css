@@ -16,6 +16,9 @@ body {
 }
 
 .card-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 150px;
   margin-bottom: 10px;
 }
@@ -193,4 +196,24 @@ p {
   .bottom-center button {
     width: 100%;
   }
+
+  .card-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .search-card input {
+    width: 75%;
+    padding: 10px;
+  }
+  
+  .add-highlights-button {
+    padding: 10px;
+  }
+
+  .add-highlights-button button {
+    width: 75%;
+    word-wrap: break-word;
+  }
+
 }
