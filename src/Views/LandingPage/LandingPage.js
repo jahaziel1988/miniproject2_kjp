@@ -12,7 +12,7 @@ function Home() {
   }, []);
 
   return (
-      <div className="home container-fluid">
+      <div className="home-main-container container-fluid">
         <Navbar/>
         <div className="video-container container-fluid d-none d-sm-block"> 
           <video controls autoPlay muted className="video">

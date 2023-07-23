@@ -1,5 +1,6 @@
 .footer {
     background-color: #B755F2;
+    margin-top: auto;
 }
 
 .footer ul {
@@ -25,3 +26,12 @@ li :hover + .footer-text {
 li a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 800px){
+
+    .footer {
+        margin-top: auto;
+    }
+    
+  }
+  

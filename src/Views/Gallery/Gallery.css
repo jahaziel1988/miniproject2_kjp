@@ -1,3 +1,9 @@
+.gallery-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
 .highlight-card {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +35,7 @@
 .highlight-description {
     color: #FFF;
     font-family: 'Antonio', sans-serif;
-    width: 800px;
+    text-align: center;
 }
 .highlight-description p{
     margin: 0;

@@ -413,7 +413,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div>
+    <div className='registration-main-container'>
       <Navbar />
       <div className="container">
         {renderForm()}

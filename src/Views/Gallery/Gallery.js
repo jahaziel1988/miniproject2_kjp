@@ -48,11 +48,12 @@ const GalleryPage = () => {
   
 return (
 
-<div>
+<div className='gallery-main-container'>
     <Navbar />
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
         
-        <div className='text-gallery container-fluid d-flex flex-column'>
+        <div className='text-gallery container-fluid d-flex flex-column p-3'>
+            <div className='container-fluid border mt-3'></div>
             <h1 className='highlight-title display-1 my-5'>Showcase 360</h1>
             <p className="highlight-description text-start text-sm-center fs-4">
             Welcome to Showcase 360 - where gaming greatness shines! Dive into our Gallery, a captivating collection of epic moments and jaw-dropping highlights from our talented members. Immerse yourself in the world of gaming brilliance and get inspired by the incredible skills on display.
@@ -60,6 +61,7 @@ return (
             <p className="highlight-description text-start text-sm-center fs-4">
             Are you ready to make your mark in the gaming community? Join us and become a member to unleash your full potential. As a member, you'll have the power to add your own mind-blowing highlights to our ever-growing collection. Don't miss this chance to be in the spotlight and share your gaming journey with fellow enthusiasts.
             </p>
+            <div className='container-fluid border mt-3'></div>
         </div>
 
     <div className="highlight-card">

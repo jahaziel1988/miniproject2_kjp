@@ -4,8 +4,8 @@ import youtube from '../../img/icons8-youtube.svg'
 import facebook from '../../img/icons8-facebook.svg'
 const Footer = () => {
     return(
-        <div>
-            <footer className='footer container-fluid'>
+        <div className='footer'>
+            <footer className='container-fluid'>
                 <ul className='m-0 p-0'>
                     <li>
                         <a href='https://discord.gg/2RyvhZa4'><img src={discord} alt="discord logo"></img>
