@@ -7,6 +7,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 28px;
+  margin-top: 50px;
 }
 
 .highlight-Homepage {
@@ -39,9 +40,7 @@ body {
   background-color: #b755f2;
 }
 
-.add-highlights-button {
-  /* padding: 10px; */
-}
+
 
 .add-highlights-button button {
   background-color: #b755f2;
@@ -151,9 +150,9 @@ body {
   color: #b755f2;
 }
 
-h2 {
+.titleC {
   text-align: center;
-  color: #fff;
+  color: #38117a;
   font-size: 36px;
 }
 
