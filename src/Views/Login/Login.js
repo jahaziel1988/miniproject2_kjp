@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import './Login.css';
 import Footer from '../../Components/Footer/Footer';
+import axios from 'axios';
 
 const Login = () => {
   const [showPage, setShowPage] = useState(false);
@@ -9,6 +10,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [usernameError, setUsernameError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+  const [loginError, setLoginError] = useState('');
 
   useEffect(() => {
     setShowPage(true);
@@ -18,24 +20,44 @@ const Login = () => {
     document.title = '2KLC | Log in';
   }, []);
 
-  const handleLogin = (e)=> {
+  const handleLogin = (e) => {
     e.preventDefault();
-
+  
+    setUsernameError(false);
+    setPasswordError(false);
+    setLoginError('');
+  
     if (!username) {
-      setUsernameError((prevErrors) => ({ ...prevErrors, username: true }));
-    } else if(!password) {
-      setPasswordError((prevErrors) => ({ ...prevErrors, password: true }));
-    } else{
-      window.location.href = '/home';
+      setUsernameError(true);
+    } else if (!password) {
+      setPasswordError(true);
+    } else {
+      axios
+        .post('http://localhost:4000/users/login', { username, password })
+        .then((response) => {
+          if (response.data && response.data.user) {
+            window.location.href = 'home';
+          } else if (response.data && response.data.admin) {
+            window.location.href = 'adminboard';
+          } else {
+            setLoginError(response.data.error || 'Login Failed. Please try again later');
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          setLoginError('Sorry, it seems your account is still pending approval or the email and password provided are invalid. Please verify and retry.');
+        });
     }
   };
 
+  
 
   return (
     <div>
       <Navbar />
       <div className={`login-container ${showPage ? 'fade-in' : ''}`}>
         <h2 className="login-title">Log in to your account</h2>
+        {loginError && <p className="error-message">{loginError}</p>}
         <div className="input-group">
           <label htmlFor="username">Username:</label>
           <input
@@ -63,12 +85,12 @@ const Login = () => {
         <div className="forgot-password">
           <a href="forgotpass">Forgot your password?</a>
         </div>
-        <button className="login-button mb-4" onClick={handleLogin} >
+        <button className="login-button mb-4" onClick={handleLogin}>
           Log in
         </button>
       </div>
-      <Footer/>
-    </div> 
+      <Footer />
+    </div>
   );
 };
 

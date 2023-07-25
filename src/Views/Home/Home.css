@@ -18,7 +18,7 @@ body {
   justify-content: center;
   background-color: #38117a;
   padding: 20px;
-  margin-top: 250px; /* Line changed: Adjusted margin-top for responsiveness */
+  margin-top: 150px; 
   font-family: 'Antonio', sans-serif;
 }
 
@@ -83,7 +83,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  width: 300px; /* Line changed: Adjusted width for responsiveness */
+  width: 300px; 
   height: 450px;
   border: 1px solid #38117a;
   background-color: #b755f2;
@@ -187,8 +187,8 @@ p {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-  .highlight-Homepage {
-    margin-top: 100px; /* Line changed: Adjusted margin-top for smaller screens */
+  .ren {
+    margin-top: 100px; 
   }
 
   .search-card,
@@ -201,6 +201,6 @@ p {
   }
 
   .card {
-    width: 100%; /* Line changed: Adjusted width for smaller screens */
+    width: 100%; 
   }
 }

@@ -38,6 +38,7 @@ const RegistrationForm = () => {
   const [dreamCommunityError, setDreamCommunityError] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
+
   useEffect(() => {
     setShowForm(true);
   }, []);
@@ -183,29 +184,49 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     if (validateStep3()) {
-        axios.post('http://localhost:4000/register', {
+      const fullNameValue = fullName.trim() === '' ? 'N/A' : fullName;
+      const formattedDate = new Date(selectedDate).toISOString().slice(0, 10); 
+      console.log('Sending data to backend:', {
         username,
         password,
         email: emailAdd,
-        fullName,
+        full_name: fullNameValue,
         address,
-        selectedDate,
-        hearAboutUs,
-        memberOfCommunities,
-        communityActivities,
-        dreamCommunity
-      })
-        .then(response => {
-          console.log(response.data);
+        birthdate: formattedDate, 
+        hear_from_us: hearAboutUs,
+        member_of_other_communities: memberOfCommunities,
+        what_can_you_do: communityActivities,
+        dream_community: dreamCommunity,
+      });
+        
+      axios
+        .post('http://localhost:4000/register', {
+          username,
+          password,
+          email: emailAdd,
+          full_name: fullNameValue,
+          address,
+          birthdate: formattedDate, 
+          hear_from_us: hearAboutUs,
+          member_of_other_communities: memberOfCommunities,
+          what_can_you_do: communityActivities,
+          dream_community: dreamCommunity,
+        })
+        .then((response) => {
+          console.log('Backend response:', response.data);
           setShowSuccessMessage(true);
         })
-        .catch(error => {
-          console.error(error);
+        .catch((error) => {
+          console.error('Error:', error);
         });
+
     }
   };
+  
+  
+  
 
   const handleOkClick = () => {
     setShowSuccessMessage(false);
@@ -222,7 +243,7 @@ const RegistrationForm = () => {
                   <h2>Create Account Information</h2>
                   <p>These information will be used to Log In.</p>
                 </div>
-                <label>Email Address:</label>
+                <label>Google Account (Gmail):</label>
                 <input
                   type="text"
                   value={emailAdd}
@@ -330,8 +351,8 @@ const RegistrationForm = () => {
                       Choose
                     </option>
                     <option value="Search Engine">Search Engine (Google, etc...)</option>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Others">Others</option>
+                    <option value="Social Media">Social Media (Facebook, Twitter, etc...)</option>
+                    <option value="Others">Others (Friends, Family, etc....)</option>
                   </select>
                   {hearAboutUsError && <p className="error-message">Please choose your answer</p>}
                 </div>

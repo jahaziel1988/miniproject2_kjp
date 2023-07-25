@@ -15,6 +15,7 @@ import ForgotPass from "./Views/ForgotPass/ForgotPass";
 import AdminBoard from "./Views/AdminBoard/AdminBoard";
 
 
+
 const router = createBrowserRouter ([
   { path: '/', element: <LandingPage /> },
   { path: 'registration', element: <Registration /> },

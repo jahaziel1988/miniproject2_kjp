@@ -13,19 +13,13 @@ import miguel_reloj from '../../vids/miguel_reloj.mp4';
 
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
-import thumbnail2 from '../../img/Thumbnail-img-DRE.png';
 import thumbnail3 from '../../img/Thumbnail-img-GECKZOID.png';
 import thumbnail4 from '../../img/Thumbnail-img-HANGMAN.png';
 import thumbnail5 from '../../img/Thumbnail-img-JAMES.png';
-import thumbnail6 from '../../img/Thumbnail-img-JENNIERUBYJANE.png';
-import thumbnail7 from '../../img/Thumbnail-img-JUICER.png';
-import thumbnail8 from '../../img/Thumbnail-img-LONEWOLPH.png';
 import thumbnail9 from '../../img/Thumbnail-img-NINI.png';
 import thumbnail10 from '../../img/Thumbnail-img-PAO.png';
-import thumbnail11 from '../../img/Thumbnail-img-PAPI.png';
 import thumbnail12 from '../../img/Thumbnail-img-PRYME.png';
 import thumbnail13 from '../../img/Thumbnail-img-RYU.png';
-import thumbnail14 from '../../img/Thumbnail-img-SEPH.png';
 import thumbnail15 from '../../img/Thumbnail-img-YUGIBOI.png';
 import thumbnail16 from '../../img/Thumbnail-img-YUMMY.png';
 
@@ -55,7 +49,7 @@ return (
         <div className='text-gallery container-fluid d-flex flex-column'>
             <h1 className='highlight-title display-1 my-5'>Showcase 360</h1>
             <p className="highlight-description text-start text-sm-center fs-4">
-            Welcome to Showcase 360 - where gaming greatness shines! Dive into our Gallery, a captivating collection of epic moments and jaw-dropping highlights from our talented members. Immerse yourself in the world of gaming brilliance and get inspired by the incredible skills on display.
+            Welcome to Showcase 360 - where gaming greatness shines! Dive into our Gallery, a captivating collection of epic moments and jaw-dropping highlights from our talented admins. Immerse yourself in the world of gaming brilliance and get inspired by the incredible skills on display.
             </p>
             <p className="highlight-description text-start text-sm-center fs-4">
             Are you ready to make your mark in the gaming community? Join us and become a member to unleash your full potential. As a member, you'll have the power to add your own mind-blowing highlights to our ever-growing collection. Don't miss this chance to be in the spotlight and share your gaming journey with fellow enthusiasts.
@@ -87,28 +81,6 @@ return (
         </div>
         </div>
 
-        <div className="card">
-        {playingCard === 2 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail2}
-            alt="Thumbnail 2"
-            onClick={() => handleCardClick(2)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(2)}>
-            {playingCard === 2 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
 
         <div className="card">
         {playingCard === 3 ? (
@@ -179,79 +151,6 @@ return (
         </div>
         </div>
 
-    </div>
-
-    <div className="highlight-card">
-
-        <div className="card">
-        {playingCard === 6 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail6}
-            alt="Thumbnail 6"
-            onClick={() => handleCardClick(6)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(6)}>
-            {playingCard === 6 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        <div className="card">
-        {playingCard === 7 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail7}
-            alt="Thumbnail 7"
-            onClick={() => handleCardClick(7)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(7)}>
-            {playingCard === 7 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        <div className="card">
-        {playingCard === 8 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail8}
-            alt="Thumbnail 8"
-            onClick={() => handleCardClick(8)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(8)}>
-            {playingCard === 8 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
         <div className="card">
         {playingCard === 9 ? (
             <video
@@ -274,6 +173,16 @@ return (
             </button>
         </div>
         </div>
+
+    </div>
+
+    <div className="highlight-card">
+
+
+
+
+
+       
 
         <div className="card">
         {playingCard === 10 ? (
@@ -298,32 +207,8 @@ return (
         </div>
         </div>
 
-    </div>
 
-    <div className="highlight-card">
 
-        <div className="card">
-        {playingCard === 11 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail11}
-            alt="Thumbnail 11"
-            onClick={() => handleCardClick(11)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(11)}>
-            {playingCard === 11 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
 
         <div className="card">
         {playingCard === 12 ? (
@@ -371,28 +256,7 @@ return (
         </div>
         </div>
 
-        <div className="card">
-        {playingCard === 14 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail14}
-            alt="Thumbnail 14"
-            onClick={() => handleCardClick(14)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(14)}>
-            {playingCard === 14 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
+
 
         <div className="card">
         {playingCard === 15 ? (
@@ -417,9 +281,6 @@ return (
         </div>
         </div>
 
-    </div>
-
-    <div className="highlight-card">
         
 
         <div className="card">

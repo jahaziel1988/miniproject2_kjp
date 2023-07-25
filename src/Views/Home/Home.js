@@ -94,7 +94,7 @@ return (
 
 <div>
     <NavHome />
-    <div className="highlight-Homepage" style={{ backgroundColor: '#38117A' }}>
+    <div className="highlight-Homepage ren" style={{ backgroundColor: '#38117A' }}>
         <div className='container-fluid d-flex align-items-center justify-content-between'>
             <div className="search-card">
                 <input type="text" placeholder="Search Username" />
