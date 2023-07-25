@@ -103,7 +103,6 @@ return (
                 <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
             </div>
         </div>
-        
         {showModal && (
         <div className="modal">
             <div className="modal-content">
@@ -247,10 +246,6 @@ return (
         </div>
         </div>
 
-    </div>
-
-    <div className="highlight-cards">
-
         <div className="card">
         {playingCard === 6 ? (
             <video
@@ -365,10 +360,6 @@ return (
             </button>
         </div>
         </div>
-
-    </div>
-
-    <div className="highlight-cards">
 
         <div className="card">
         {playingCard === 11 ? (
@@ -485,11 +476,6 @@ return (
         </div>
         </div>
 
-        
-
-    </div>
-
-    <div className="highlight-cards">
           {highlightData.map((highlight) => (
             <div className="card" key={highlight.id}>
               {playingCard === highlight.id ? (

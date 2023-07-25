@@ -7,7 +7,11 @@
   .title-sub-font {
     font-family: 'Antonio', sans-serif;
   } 
-  .home {
+  .home-main-container {
+    background-color: #38117A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
   }
@@ -62,7 +66,13 @@
   }
 
   @media screen and (max-width: 800px){
-
+    .home-main-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
     .navbar-logo {
       transform: translate(5%, 5%);
       height: 120px;

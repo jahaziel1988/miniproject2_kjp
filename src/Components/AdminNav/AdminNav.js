@@ -9,7 +9,7 @@ const Navbar = () => {
     const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav className="navbar main" style={{textAlign: 'center', display: 'flex', alignItems: 'center', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+    <nav className="navbar main" style={{textAlign: 'center', display: 'flex', alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between'}}>
       <div className="navbar-logo" >
         <a href="adminboard" className="navbar-lebrown-city-link"><img src={logo} alt="2KLC Logo" style={{ width: "150px", height: "auto" }} />
         <h2 className="display-5">Lebrown City</h2></a>

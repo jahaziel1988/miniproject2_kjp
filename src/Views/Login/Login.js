@@ -53,7 +53,7 @@ const Login = () => {
   
 
   return (
-    <div>
+    <div className='login-main-container'>
       <Navbar />
       <div className={`login-container ${showPage ? 'fade-in' : ''}`}>
         <h2 className="login-title">Log in to your account</h2>

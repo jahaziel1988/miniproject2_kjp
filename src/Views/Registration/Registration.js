@@ -236,7 +236,7 @@ const RegistrationForm = () => {
     switch (step) {
       case 1:
         return (
-          <div className="form-container">
+          <div className="form-container container p-5">
             <div className={`fade-in ${showForm ? 'show' : ''}`}>
               <form onSubmit={handleSubmit}>
                 <div className="text-header">
@@ -287,7 +287,6 @@ const RegistrationForm = () => {
                 )}
                 <br />
                 <div className="button-container">
-                  <div></div>
                   <div className="buttonNext">
                     <button className="next-button" type="button" onClick={nextStep}>
                       Next
@@ -435,7 +434,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div>
+    <div className='registration-main-container'>
       <Navbar />
       <div className="container">
         {renderForm()}

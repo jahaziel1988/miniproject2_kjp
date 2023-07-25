@@ -2,6 +2,12 @@ body {
   background-color: #38117a;
 }
 
+.login-main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .login-container {
   background-color: #B755F2;
   width: 400px;

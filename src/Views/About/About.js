@@ -12,7 +12,7 @@ const About = () => {
         document.title = "2KLC | About Us"
       }, []);
     return (
-        <div className="about_page">
+        <div className="about-main-container">
             <Navbar />
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">

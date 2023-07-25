@@ -5,21 +5,22 @@ body {
 .highlight-cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: #38117a;
+  justify-content: space-evenly;
   gap: 28px;
 }
 
 .highlight-Homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #38117a;
   padding: 20px;
-  margin-top: 150px; 
   font-family: 'Antonio', sans-serif;
+}
+
+.card-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 10px;
 }
 
 .highlight-title {
@@ -29,25 +30,17 @@ body {
 
 .search-card {
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .search-card input {
-  margin-right: 10px;
+  margin: 0;
   width: 400px;
-  height: auto;
-  padding: 16px 20px;
   border-radius: 20px;
   background-color: #b755f2;
 }
 
 .add-highlights-button {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* padding: 10px; */
 }
 
 .add-highlights-button button {
@@ -83,7 +76,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  width: 300px; 
+  width: 300px;
   height: 450px;
   border: 1px solid #38117a;
   background-color: #b755f2;
@@ -185,15 +178,11 @@ p {
   font-size: 24px;
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-  .ren {
-    margin-top: 100px; 
-  }
 
-  .search-card,
-  .add-highlights-button {
-    padding: 10px;
+@media (max-width: 800px) {
+
+  .search-card {
+    flex-grow: 1;
   }
 
   .search-card input {
@@ -201,6 +190,30 @@ p {
   }
 
   .card {
-    width: 100%; 
+    width: 100%;
   }
+
+  .bottom-center button {
+    width: 100%;
+  }
+
+  .card-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .search-card input {
+    width: 75%;
+    padding: 10px;
+  }
+  
+  .add-highlights-button {
+    padding: 10px;
+  }
+
+  .add-highlights-button button {
+    width: 75%;
+    word-wrap: break-word;
+  }
+
 }
