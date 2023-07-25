@@ -27,7 +27,6 @@ import thumbnail12 from '../../img/Thumbnail-img-PRYME.png';
 import thumbnail13 from '../../img/Thumbnail-img-RYU.png';
 import thumbnail14 from '../../img/Thumbnail-img-SEPH.png';
 import thumbnail15 from '../../img/Thumbnail-img-YUGIBOI.png';
-import thumbnail16 from '../../img/Thumbnail-img-YUMMY.png';
 
 const Home = () => {
   const [playingCard, setPlayingCard] = useState(null);
