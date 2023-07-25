@@ -16,7 +16,7 @@ const AdminBoard = () => {
     document.title = '2KLC | Admin';
 
     fetchUsers();
-  }, []);
+  }, );
 
   const fetchUsers = () => {
     axios
