@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import NavHome from '../../Components/NavHome/NavHome';
 import Footer from '../../Components/Footer/Footer'
 import './Home.css';
+import axios from 'axios';
 
 
 
@@ -13,6 +14,8 @@ const Home = () => {
   const [playerCardFile, setPlayerCardFile] = useState(null);
   const [videoHighlightsFile, setVideoHighlightsFile] = useState(null);
   const [highlightData, setHighlightData] = useState([]);
+  const userData = JSON.parse(localStorage.getItem('userData'));
+
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -30,22 +33,30 @@ const Home = () => {
 
   const handleAddFile = () => {
     setShowModal(false);
-
-      
+  
     if (playerCardFile && videoHighlightsFile) {
-        setHighlightData((prevData) => [
-          ...prevData,
-          {
-            id: prevData.length + 1,
-            playerCard: URL.createObjectURL(playerCardFile),
-            videoHighlight: URL.createObjectURL(videoHighlightsFile),
-          },
-        ]);
-      }
-    
-      setPlayerCardFile(null);
-      setVideoHighlightsFile(null);
-  }
+      const formData = new FormData();
+      formData.append('uID', userData.uID);
+      formData.append('username', userData.username);
+      formData.append('playerCard', playerCardFile);
+      formData.append('videoHighlight', videoHighlightsFile);
+  
+      axios
+        .post('http://localhost:4000/users/highlights', formData)
+        .then((response) => {
+          console.log(response.data);
+          fetchHighlightData(); 
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  
+    setPlayerCardFile(null);
+    setVideoHighlightsFile(null);
+  };
+  
+  
 
   const handleCloseModalClick = () => {
     setShowModal(false);
@@ -61,10 +72,23 @@ const Home = () => {
     const file = e.target.files[0];
     setVideoHighlightsFile(file);
   };  
+
+  const fetchHighlightData = () => {
+    axios
+      .get('http://localhost:4000/users/highlights')
+      .then((response) => {
+        console.log(response.data);
+        setHighlightData(response.data);
+      })
+      .catch((error) => {
+        console.error('Error fetching highlights:', error);
+      });
+  };
   
 
   useEffect(() => {
     document.title = "2KLC | Home"
+    fetchHighlightData();
   }, []);
   
 return (
@@ -106,30 +130,33 @@ return (
       </div>
     )}
 
-    <div className="highlight-cards">
-        
-
-
-          {highlightData.map((highlight) => (
-            <div className="card" key={highlight.id}>
-              {playingCard === highlight.id ? (
-                <video src={highlight.videoHighlight} ref={videoRef} autoPlay loop controls />
-              ) : (
-                <img
-                  src={highlight.playerCard}
-                  alt={`Thumbnail ${highlight.id}`}
-                  onClick={() => handleCardClick(highlight.id)}
-                />
-              )}
-              <div className="bottom-center">
-                <button onClick={() => handleCardClick(highlight.id)}>
-                  {playingCard === highlight.id ? 'Go Back' : 'See Highlights'}
-                </button>
-              </div>
+        <div className="highlight-cards">
+        {highlightData.map((highlight) => (
+          <div className="card" key={highlight.id}>
+            {playingCard === highlight.id ? (
+              <video
+                src={`http://localhost:4000/uploads/${highlight.videoHighlight}`}
+                ref={videoRef}
+                autoPlay
+                loop
+                controls
+              />
+            ) : (
+              <img
+                src={`http://localhost:4000/uploads/${highlight.playerCard}`}
+                alt={`Thumbnail ${highlight.id}`}
+                onClick={() => handleCardClick(highlight.id)}
+              />
+            )}
+            <div className="bottom-center">
+              <button onClick={() => handleCardClick(highlight.id)}>
+                {playingCard === highlight.id ? 'Go Back' : 'See Highlights'}
+              </button>
             </div>
-            ))}
+          </div>
+        ))}
         </div>
-    </div>
+      </div>
     <Footer />
 </div>
 

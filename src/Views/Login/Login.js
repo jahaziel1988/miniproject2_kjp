@@ -36,6 +36,8 @@ const Login = () => {
         .post('http://localhost:4000/users/login', { username, password })
         .then((response) => {
           if (response.data && response.data.user) {
+            localStorage.setItem('userData', JSON.stringify(response.data.user));
+  
             window.location.href = 'home';
           } else if (response.data && response.data.admin) {
             window.location.href = 'adminboard';
@@ -49,6 +51,7 @@ const Login = () => {
         });
     }
   };
+  
 
   
 
