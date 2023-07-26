@@ -11,7 +11,6 @@ import LandingPage from "./Views/LandingPage/LandingPage";
 import Home from './Views/Home/Home';
 import Login from './Views/Login/Login';
 import HomeAbout from './Views/HomeAbout/HomeAbout';
-import ForgotPass from "./Views/ForgotPass/ForgotPass";
 import AdminBoard from "./Views/AdminBoard/AdminBoard";
 
 
@@ -24,7 +23,6 @@ const router = createBrowserRouter ([
   { path: 'home', element: <Home /> },
   { path: 'login', element: <Login /> },
   { path: 'homeabout', element: <HomeAbout /> },
-  { path: 'forgotpass', element: <ForgotPass /> },
   { path: 'adminboard', element: <AdminBoard/> },
 ]);
 
