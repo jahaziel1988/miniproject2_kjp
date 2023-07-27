@@ -202,7 +202,7 @@ const RegistrationForm = () => {
       });
         
       axios
-        .post('http://localhost:4000/register', {
+        .post('http://localhost:5000/register', {
           username,
           password,
           email: emailAdd,

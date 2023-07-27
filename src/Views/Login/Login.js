@@ -35,7 +35,7 @@ const Login = () => {
       setPasswordError(true);
     } else {
       axios
-        .post('http://localhost:4000/users/login', { username, password })
+        .post('http://localhost:5000/users/login', { username, password })
         .then((response) => {
           if (response.data && response.data.user) {
             localStorage.setItem('userData', JSON.stringify(response.data.user));

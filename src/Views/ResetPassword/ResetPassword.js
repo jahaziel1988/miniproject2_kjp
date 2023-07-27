@@ -27,7 +27,7 @@ const ResetPassword = () => {
     const resetToken = searchParams.get('token');
 
     axios
-      .post('http://localhost:4000/users/reset-password', { resetToken, password })
+      .post('http://localhost:5000/users/reset-password', { resetToken, password })
       .then((response) => {
         // Password reset successful, you can redirect the user to the login page
         history.push('/login');

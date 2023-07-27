@@ -40,7 +40,7 @@ const Home = () => {
       formData.append('videoHighlight', videoHighlightsFile);
   
       axios
-        .post('http://localhost:4000/users/highlights', formData)
+        .post('http://localhost:5000/users/highlights', formData)
         .then((response) => {
           console.log(response.data);
           fetchHighlightData(); 
@@ -73,7 +73,7 @@ const Home = () => {
 
   const fetchHighlightData = () => {
     axios
-      .get('http://localhost:4000/users/highlights')
+      .get('http://localhost:5000/users/highlights')
       .then((response) => {
         console.log(response.data);
         setHighlightData(response.data);
@@ -89,7 +89,7 @@ const Home = () => {
 
   const enterSearch = async (e) => {
     if (e.key === 'Enter') {
-        const response = await axios.get(`http://localhost:4000/users/search?username=${searchQuery}`)
+        const response = await axios.get(`http://localhost:5000/users/search?username=${searchQuery}`)
         setHighlightData(response.data);
         console.log(response.data);
     }
@@ -143,7 +143,7 @@ return (
           <div className="card" key={highlight.id}>
             {playingCard === highlight.id ? (
               <video
-                src={`http://localhost:4000/uploads/${highlight.videoHighlight}`}
+                src={`http://localhost:5000/uploads/${highlight.videoHighlight}`}
                 ref={videoRef}
                 autoPlay
                 loop
@@ -151,7 +151,7 @@ return (
               />
             ) : (
               <img
-                src={`http://localhost:4000/uploads/${highlight.playerCard}`}
+                src={`http://localhost:5000/uploads/${highlight.playerCard}`}
                 alt={`Thumbnail ${highlight.id}`}
                 onClick={() => handleCardClick(highlight.id)}
               />

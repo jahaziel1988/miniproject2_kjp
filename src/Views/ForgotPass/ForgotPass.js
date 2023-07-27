@@ -22,7 +22,7 @@ const ForgotPassword = () => {
       setUsernameError(true);
     } else {
       axios
-        .post('http://localhost:4000/users/forgot-password', { username, email })
+        .post('http://localhost:5000/users/forgot-password', { username, email })
         .then((response) => {
           setIsEmailSent(true);
         })

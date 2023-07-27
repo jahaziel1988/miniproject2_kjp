@@ -16,7 +16,7 @@ const AdminBoard = () => {
 
   const fetchUsers = () => {
     axios
-      .get('http://localhost:4000/users', {
+      .get('http://localhost:5000/users', {
         params: { searchQuery, is_approved: false },
       })
       .then((response) => {
@@ -42,7 +42,7 @@ if (searchQuery === '') {
   const handleApproveConfirmation = () => {
     if (userToApprove) {
       axios
-        .post('http://localhost:4000/admin/approve', { 
+        .post('http://localhost:5000/admin/approve', { 
           userID: userToApprove.uID, 
           email: userToApprove.email, 
           username: userToApprove.username,
@@ -62,7 +62,7 @@ if (searchQuery === '') {
 
 const enterSearch = async (e) => {
   if (e.key === 'Enter') {
-      const response = await axios.get(`http://localhost:4000/admin/search?username=${searchQuery}`)
+      const response = await axios.get(`http://localhost:5000/admin/search?username=${searchQuery}`)
       setFilteredUsers(response.data);
   }
 };
