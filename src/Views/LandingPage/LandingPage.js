@@ -14,7 +14,7 @@ function Home() {
   return (
       <div className="home-main-container container-fluid">
         <Navbar/>
-        <div className="video-container container-fluid d-none d-sm-block"> 
+        <div className="video-container container-fluid"> 
           <video controls autoPlay muted className="video">
             <source src={Trailer} type="video/mp4" />
           </video>
