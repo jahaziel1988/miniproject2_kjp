@@ -12,7 +12,7 @@ import Home from './Views/Home/Home';
 import Login from './Views/Login/Login';
 import HomeAbout from './Views/HomeAbout/HomeAbout';
 import AdminBoard from "./Views/AdminBoard/AdminBoard";
-
+import ForgotPassword from "./Views/ForgotPass/ForgotPass";
 
 
 const router = createBrowserRouter ([
@@ -24,6 +24,7 @@ const router = createBrowserRouter ([
   { path: 'login', element: <Login /> },
   { path: 'homeabout', element: <HomeAbout /> },
   { path: 'adminboard', element: <AdminBoard/> },
+  { path: 'forgotpass', element: <ForgotPassword/> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

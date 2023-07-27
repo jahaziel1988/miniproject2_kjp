@@ -12,6 +12,7 @@ const Login = () => {
   const [passwordError, setPasswordError] = useState(false);
   const [loginError, setLoginError] = useState('');
 
+
   useEffect(() => {
     setShowPage(true);
   }, []);
@@ -19,6 +20,7 @@ const Login = () => {
   useEffect(() => {
     document.title = '2KLC | Log in';
   }, []);
+
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -53,7 +55,6 @@ const Login = () => {
   };
   
 
-  
 
   return (
     <div className='login-main-container'>
