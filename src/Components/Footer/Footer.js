@@ -1,7 +1,8 @@
-import './Footer.css'
-import discord from '../../img/icons8-discord.svg'
-import youtube from '../../img/icons8-youtube.svg'
-import facebook from '../../img/icons8-facebook.svg'
+import './Footer.css';
+import discord from '../../img/icons8-discord.svg';
+import youtube from '../../img/icons8-youtube.svg';
+import facebook from '../../img/icons8-facebook.svg';
+
 const Footer = () => {
     return(
         <div className='footer'>

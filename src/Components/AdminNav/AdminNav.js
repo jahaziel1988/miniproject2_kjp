@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import logo from "../../img/2KLC_logo.png";
-import './../Navbar/Navbar.css';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
