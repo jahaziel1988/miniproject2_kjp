@@ -3,7 +3,6 @@ import './AdminBoard.css';
 import AdminNav from '../../Components/AdminNav/AdminNav';
 import axios from 'axios';
 
-
 const AdminBoard = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredUsers, setFilteredUsers] = useState([]);
@@ -11,11 +10,8 @@ const AdminBoard = () => {
   const [userToApprove, setUserToApprove] = useState(null);
   
 
-
   useEffect(() => {
     document.title = '2KLC | Admin';
-
-    fetchUsers();
   }, );
 
   const fetchUsers = () => {
@@ -33,15 +29,10 @@ const AdminBoard = () => {
   };
   
   
-  useEffect(() => {
-    const delayDebounceFn = setTimeout(() => {
-      fetchUsers();
-    }, 300); 
 
-    return () => clearTimeout(delayDebounceFn);
-  }, );
-
-  
+if (searchQuery === '') {
+    fetchUsers();
+} 
 
   const handleApprove = (user) => {
     setUserToApprove(user);
@@ -69,6 +60,12 @@ const AdminBoard = () => {
     }
   };
 
+const enterSearch = async (e) => {
+  if (e.key === 'Enter') {
+      const response = await axios.get(`http://localhost:4000/admin/search?username=${searchQuery}`)
+      setFilteredUsers(response.data);
+  }
+};
 
   const closeModal = () => {
     setShowApproveModal(false);
@@ -83,8 +80,10 @@ const AdminBoard = () => {
             placeholder="Search Username"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyPress={enterSearch}
           />
         </div>
+
       <div className="admin-board container-fluid">
         <div className="user-list">
           {filteredUsers.map((user) => (

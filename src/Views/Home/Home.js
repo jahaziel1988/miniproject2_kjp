@@ -6,7 +6,6 @@ import './Home.css';
 import axios from 'axios';
 
 
-
 const Home = () => {
   const [playingCard, setPlayingCard] = useState(null);
   const videoRef = useRef(null);
@@ -15,7 +14,7 @@ const Home = () => {
   const [videoHighlightsFile, setVideoHighlightsFile] = useState(null);
   const [highlightData, setHighlightData] = useState([]);
   const userData = JSON.parse(localStorage.getItem('userData'));
-
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -25,7 +24,6 @@ const Home = () => {
       setPlayingCard(cardId);
     }
   };
-
 
   const handleAddHighlightsClick = () => {
     setShowModal(true);
@@ -85,10 +83,20 @@ const Home = () => {
       });
   };
   
+  if (searchQuery === '') {
+    fetchHighlightData();
+} 
 
+  const enterSearch = async (e) => {
+    if (e.key === 'Enter') {
+        const response = await axios.get(`http://localhost:4000/users/search?username=${searchQuery}`)
+        setHighlightData(response.data);
+        console.log(response.data);
+    }
+  };
+  
   useEffect(() => {
     document.title = "2KLC | Home"
-    fetchHighlightData();
   }, []);
   
 return (
@@ -98,7 +106,7 @@ return (
     <div className="highlight-Homepage ren" style={{ backgroundColor: '#38117A' }}>
         <div className='container-fluid d-flex align-items-center justify-content-between'>
             <div className="search-card">
-                <input type="text" placeholder="Search Username" />
+                <input type="text" placeholder="Search Username" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyPress={enterSearch}/>
             </div>
             <div className="add-highlights-button">
                 <button onClick={handleAddHighlightsClick}>Add Your Highlights</button>
